@@ -1,0 +1,968 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Nixer - Creative Agency & Portfolio HTML Template</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Place favicon.ico in the root directory -->
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+      <!-- CSS here -->
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+      <link rel="stylesheet" href="assets/css/magnific-popup.css">
+      <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+      <link rel="stylesheet" href="assets/css/spacing.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+   </head>
+   <body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+
+      <!-- pre loader area start -->
+      <div id="loading">
+         <div class="loader-mask">
+            <div class="loader">
+              <div></div>
+              <div></div>
+            </div>
+         </div>
+      </div>
+      <!-- pre loader area end -->
+
+
+      <!-- back to top start -->
+      <div class="back-to-top-wrapper">
+         <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>               
+         </button>
+      </div>
+      <!-- back to top end -->
+
+
+      <!-- cart mini area start -->
+      <div class="cartmini__area">
+         <div class="cartmini__wrapper p-relative d-flex justify-content-between flex-column">
+            <div class="cartmini__close">
+               <button type="button" class="cartmini__close-btn cartmini-close-btn"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="cartmini__top-wrapper">
+               <div class="cartmini__top p-relative">
+                  <div class="cartmini__top-title">
+                     <h4>Shopping cart</h4>
+                  </div>
+               </div>
+               <div class="cartmini__shipping">
+               <p> Free Shipping for all orders over <span>$50</span></p>
+               <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" data-width="70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+               </div>                   
+               </div>
+               <div class="cartmini__widget">
+                  <div class="cartmini__widget-item">
+                     <div class="cartmini__thumb">
+                        <a href="shop-details.html">
+                           <img src="assets/img/menu/cartmini-1.jpg" alt="">
+                        </a>
+                     </div>
+                     <div class="cartmini__content">
+                        <h5 class="cartmini__title"><a href="shop-details.html">Nar Allt Ar Over</a></h5>
+                        <div class="cartmini__price-wrapper">
+                           <span class="cartmini__price">$108.00</span>
+                           <span class="cartmini__quantity">x2</span>
+                        </div>
+                     </div>
+                     <a href="#" class="cartmini__del"><i class="fa-regular fa-xmark"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="cartmini__checkout">
+               <div class="cartmini__checkout-title mb-30">
+                  <h4>Subtotal:</h4>
+                  <span>$108.00</span>
+               </div>
+               <div class="cartmini__checkout-btn">
+                  <a href="cart.html" class="tp-btn mb-10 w-100"> view cart</a>
+                  <a href="checkout.html" class="tp-btn tp-btn-border w-100"> checkout</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- cart mini area end -->
+
+
+      <!-- offcanvas area end -->
+      <div class="tp-offcanvas-2-area nixer-dark p-relative">
+         <div class="tp-offcanvas-2-bg is-left left-box"></div>
+         <div class="tp-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
+         <div class="tp-offcanvas-2-wrapper">
+            <div class="tp-offcanvas-2-left left-box p-relative">
+               <div class="tp-offcanvas-2-left-wrap d-flex justify-content-between align-items-center">
+                  <div class="tp-offcanvas__logo">
+                     <a class="logo-1" href="index.html"><img data-width="120" src="assets/img/logo/logo.png" alt=""></a>
+                  </div>
+                  <div class="tp-offcanvas-2-close d-md-none text-end">
+                     <button class="tp-offcanvas-2-close-btn tp-offcanvas-2-close-btn">
+                        <span class="text">
+                           <span>close</span>
+                        </span>
+                        <span class="d-inline-block">
+                           <span>
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <rect width="32.621" height="1.00918" transform="matrix(0.704882 0.709325 -0.704882 0.709325 1.0061 0)" fill="currentcolor"/>
+                                 <rect width="32.621" height="1.00918" transform="matrix(0.704882 -0.709325 0.704882 0.709325 0 23.2842)" fill="currentcolor"/>
+                              </svg>
+                           </span>
+                        </span>
+                     </button>
+                  </div>
+               </div>
+               <div class="tp-offcanvas-menu counter-row">
+                  <nav></nav>
+               </div>
+            </div>
+            <div class="tp-offcanvas-2-right right-box d-none d-md-block p-relative">
+               <div class="tp-offcanvas-2-close text-end">
+                  <button class="tp-offcanvas-2-close-btn">
+                     <span class="text">
+                        <span>close</span>
+                     </span>
+
+                     <span class="d-inline-block">
+                        <span>
+                           <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M9.80859 9.80762L28.1934 28.1924" stroke="currentColor" stroke-width="1.5"
+                                 stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M9.80859 28.1924L28.1934 9.80761" stroke="currentColor" stroke-width="1.5"
+                                 stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </span>
+                     </span>
+                     
+                  </button>
+               </div>
+               <div class="tp-offcanvas-2-right-text">
+                  <h3>Menu</h3>
+               </div>
+               <div class="tp-offcanvas-2-right-inner d-flex align-items-end justify-content-end h-100">
+                  <div class="tp-offcanvas-2-right-info">
+                     <div class="tp-offcanvas-2-thumb text-end">
+                        <img src="assets/img/others/menu-img.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- offcanvas area start -->
+
+      
+      <!-- header area start -->
+      <header id="header-sticky" class="tp-header-4-ptb tp-header-transparent">
+         <div class="tp-header-main-sticky p-relative">
+            <div class="container container-1800">
+               <div class="d-flex justify-content-between align-items-center">
+                  <div class="tp-header-logo">
+                     <a href="index.html">
+                        <img class="black" data-width="120" src="assets/img/logo/logo.png" alt="">
+                     </a>
+                  </div>
+                  <div class="tp-header-2-hamburger hamburger-four">
+                     <div class="tp-header-hamburger offcanvas-open-btn">
+                        <button class="tp-hamburger-btn">
+                           <span></span>
+                           <span></span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="tp-header-box d-none d-md-flex align-items-center justify-content-between">
+                     <div class="tp-header-1-menu">
+                        <div class="tp-main-menu d-none">
+                           <nav class="tp-mobile-menu-active">
+                              <ul>
+                                 <li class="has-dropdown p-static">
+                                    <a href="index.html">Homes</a>
+                                    <ul class="tp-submenu sub-menu">
+                                       <li><a href="index.html">CREATIVE AGENCY</a></li>
+                                       <li><a href="index-2.html">Digital Agency</a></li>
+                                       <li><a href="index-3.html">creative Studio</a></li>
+                                       <li><a href="index-4.html">personal portfolio</a></li>
+                                       <li><a href="index-5.html">Law Firm Agency</a></li>
+                                       <li><a href="index-6.html">Creative Portfolio</a></li>
+                                       <li><a href="index-7.html">Interactive</a></li>
+                                       <li><a href="index-8.html">horizontal</a></li>
+                                    </ul>
+                                 </li>
+                                 <li  class="has-dropdown">
+                                    <a href="about-me.html">About</a>
+                                    <ul class="tp-submenu sub-menu">
+                                       <li><a href="about-me.html">About Me</a></li>
+                                       <li><a href="about-us.html">About Us</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="has-dropdown">
+                                    <a href="portfolio-rendom.html">Portfolio</a>
+                                   <ul class="tp-submenu sub-menu">
+                                       <li><a href="portfolio-rendom.html">Random</a></li>
+                                       <li><a href="portfolio-col-2.html">Two-Columns</a></li>
+                                       <li><a href="portfolio-col-3.html">Three-Columns </a></li>
+                                       <li><a href="portfolio-col-4.html">Four-Columns</a></li>
+                                       <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="has-dropdown">
+                                    <a href="#">Pages</a>
+                                    <ul class="tp-submenu sub-menu">
+                                       <li><a href="team.html">Team</a></li>
+                                       <li><a href="team-details.html">Team Details</a></li>
+                                       <li><a href="service.html">Service</a></li>
+                                       <li><a href="service-details.html">Service Details</a></li>
+                                       <li><a href="pricing.html">Pricing</a></li>
+                                       <li><a href="faq.html">Faq</a></li>
+                                       <li><a href="shop.html">Shop</a></li>
+                                       <li><a href="shop-details.html">Shop Details</a></li>
+                                       <li><a href="cart.html">Cart</a></li>
+                                       <li><a href="checkout.html">Checkout</a></li>
+                                       <li><a href="login.html">Login</a></li>
+                                       <li><a href="register.html">Register</a></li>
+                                       <li><a href="error.html">404 Error Page</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="has-dropdown">
+                                    <a href="blog-sidebar.html">Blog</a>
+                                    <ul class="tp-submenu sub-menu">
+                                       <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
+                                       <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="has-dropdown">
+                                    <a href="contact.html">Contact</a>
+                                    <ul class="tp-submenu sub-menu">
+                                       <li><a href="contact.html">Contact</a></li>
+                                       <li><a href="contact-2.html">Get in Touch</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                     <div class="tp-header-main-right d-flex align-items-center">
+                        
+                        <div class="tp-header-2-right-btn btn-four d-none d-md-block">
+                           <a class="tp-btn-animation" href="contact.html">
+                              <span>Get in Touch</span>
+                              <span>Get in Touch</span>
+                              <span>Get in Touch</span>
+                              <span>Get in Touch</span>
+                              <span>Get in Touch</span>
+                              <span>Get in Touch</span>
+                           </a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- header area end -->
+
+
+      <div id="smooth-wrapper">
+         <div id="smooth-content">
+            <main data-bg-color="#121212">
+               
+               <!-- hero area start -->
+               <section class="tp-hero-4-ptb fix pt-120 pb-130 p-relative">
+                  <div class="container container-1520">
+                     <div class="row align-items-center">
+                        <div class="col-lg-6">
+                           <div class="tp-hero-4-thumb p-relative">
+                              <img src="assets/img/hero/home-4/hero-4-thumb.png" alt="">
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="tp-hero-4-content">
+                              <span class="tp-hero-4-subtitle tp-char-animation"><img src="assets/img/hero/home-4/title-icon.png" alt=""> Hello, i’m Frank Phillips</span>
+                              <h3 class="tp-hero-4-title tp-title-anim">Professional 
+                                 designer</h3>
+                              <p class="tp_fade_bottom">Hey, are you looking for a designer to build <br>
+                                 your brand and grow your business? let’s <br>
+                                 shake hands with me.</p>
+                              <div class="tp-hero-2-btn-box social tp_fade_bottom">
+                                 <div class="tp-project-2-btn-box d-flex">
+                                    <a href="#">Linkedin</a>
+                                    <a href="#">Twitter</a>
+                                    <a href="#">Instagram</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tp-hero-2-down down smooth">
+                     <a href="#down" class="d-flex align-items-center">
+                        <div class="tp-hero-down-text">
+                           <span>Keep <br>
+                              Scrolling</span>
+                        </div>
+                        <div class="tp-hero-down-icon">
+                           <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="72" viewBox="0 0 16 72" fill="none">
+                              <path d="M16 63C11.578 63 7.99989 66.5781 7.99989 71C7.99989 66.5781 4.42196 63 0 63M7.30078 1H8.80078V71H7.30078V1Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                            </svg></span>
+                        </div>
+                     </a>
+                  </div>
+               </section>
+               <!-- hero area end -->
+
+
+               <!-- service area start -->
+               <section id="down" class="tp-service-4-ptb pb-130">
+                  <div class="container container-1610">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="tp-service-4-wrapper">
+                              <span class="tp-service-4-subtitle tp-title-anim">My expertise</span>
+                              <h3 class="tp-section-4-title tp-title-anim">Professional <br>
+                                 Services</h3>
+                              <p class="tp-title-anim">Beautiful, functional websites created using the powerful <br>
+                                 Webflow platform. Highly customizable and easily <br>
+                                 manageable, even with no prior.</p>
+                              <div class="tp-service-4-btn-box tp-title-anim">
+                                 <div class="tp-service-4-btn">
+                                    <div class="tp-project-4-btn">
+                                       <a href="service.html">All Service <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                          <path d="M1.51562 14.7968L14.6838 1.62864M3.83594 1.16205C6.96385 4.28996 12.2505 4.06539 15.656 0.659936M15.6533 0.655273C12.2478 4.06072 12.0232 9.34739 15.1511 12.4753" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+                                        </svg></span></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="tp-service-4-content">
+                              <a href="service-details.html" class="tp-service-4-item active d-flex justify-content-between">
+                                 <span>Website design</span>
+                                 <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26" fill="none">
+                                    <path d="M20.5078 0C20.5051 7.18628 27.3242 13.0013 35.754 13.0013M35.7432 12.999C27.3134 12.999 20.49 18.814 20.4873 26.0003M0.75 13.0039H33.3462" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg></span>
+                              </a>
+                              <a href="service-details.html" class="tp-service-4-item d-flex justify-content-between">
+                                 <span>Branding</span>
+                                 <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26" fill="none">
+                                    <path d="M20.5078 0C20.5051 7.18628 27.3242 13.0013 35.754 13.0013M35.7432 12.999C27.3134 12.999 20.49 18.814 20.4873 26.0003M0.75 13.0039H33.3462" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg></span>
+                              </a>
+                              <a href="service-details.html" class="tp-service-4-item d-flex justify-content-between">
+                                 <span>UI/UX design</span>
+                                 <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26" fill="none">
+                                    <path d="M20.5078 0C20.5051 7.18628 27.3242 13.0013 35.754 13.0013M35.7432 12.999C27.3134 12.999 20.49 18.814 20.4873 26.0003M0.75 13.0039H33.3462" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg></span>
+                              </a>
+                              <a href="service-details.html" class="tp-service-4-item d-flex justify-content-between">
+                                 <span>Graphic design</span>
+                                 <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26" fill="none">
+                                    <path d="M20.5078 0C20.5051 7.18628 27.3242 13.0013 35.754 13.0013M35.7432 12.999C27.3134 12.999 20.49 18.814 20.4873 26.0003M0.75 13.0039H33.3462" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- service area end -->
+
+
+               <!-- awerd area start -->
+                <div class="tp-awerd-ptb p-relative">
+                  <div class="tp-awerd-thumb">
+                     <img class="w-100" data-speed=".8" src="assets/img/awerd/awerd-thumb-1.jpg" alt="">
+                  </div>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="tp-awerd-wrap">
+                              <div class="tp-awerd-item">
+                                 <div class="tp-awerd-item-icon">
+                                    <img src="assets/img/awerd/awerd-icon.png" alt="">
+                                 </div>
+                                 <div class="tp-awerd-item-content">
+                                    <p>We provide special
+                                       offers for the best
+                                       customers</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+               <!-- awerd area end -->
+
+
+               <!-- project area start -->
+               <section class="tp-project-4-ptb tp-project-panel pt-160">
+                  <div class="container container-1520">
+                     <div class="row">
+                        <div class="col-lg-7">
+                           <div class="tp-project-4-heading pb-100">
+                              <h3 class="tp-section-4-title tp-title-anim">Some of the <br>
+                                 most impressive <br>
+                                 projects i have <br>
+                                 worked</h3>
+                           </div>
+                        </div>
+                        <div class="col-lg-5">
+                           <div class="tp-project-4-heading tp-title-anim pb-100">
+                              <p>These are just a few projects that I personally enjoy the most. I would be glad
+                                 to show you a bunch of other projects that I have done so far. Would you like
+                                 to have a look at them?</p>
+                              <div class="tp-project-4-btn">
+                                 <a href="portfolio-col-2.html">All projects <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                    <path d="M1.51562 14.7968L14.6838 1.62864M3.83594 1.16205C6.96385 4.28996 12.2505 4.06539 15.656 0.659936M15.6533 0.655273C12.2478 4.06072 12.0232 9.34739 15.1511 12.4753" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                                  </svg></span></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tp-project-4-item-wrapper project-panel" data-bg-color="#121212">
+                     <div class="container container-1520">
+                        <div class="row">
+                           <div class="col-lg-5">
+                              <div class="tp-project-4-item-content tp_fade_left">
+                                 <h4 class="tp-project-4-item-title"><a href="portfolio-details.html">Aura Club</a></h4>
+                                 <p>From the investor's vision of an elite and refined
+                                    residential community, it transcends the value of
+                                    merely being an upscale living space.</p>
+                                 <div class="tp-project-4-item-list pb-170">
+                                    <ul>
+                                       <li><span>Category:</span> Website</li>
+                                       <li><span>Role:</span> Web designer</li>
+                                       <li><span>Tag:</span> Business, elegant</li>
+                                    </ul>
+                                 </div>
+                                 <div class="tp-project-4-btn">
+                                    <a href="portfolio-details.html">Project details <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                       <path d="M1.51562 14.7968L14.6838 1.62864M3.83594 1.16205C6.96385 4.28996 12.2505 4.06539 15.656 0.659936M15.6533 0.655273C12.2478 4.06072 12.0232 9.34739 15.1511 12.4753" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                                     </svg></span></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7">
+                              <div class="anim-zoomin-wrap">
+                                 <div class="tp-project-4-item-thumb anim-zoomin">
+                                    <a href="portfolio-details.html"><img src="assets/img/project/home-4/project-4-1.jpg" alt=""></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tp-project-4-item-wrapper project-panel" data-bg-color="#121212">
+                     <div class="container container-1520">
+                        <div class="row">
+                           <div class="col-lg-5">
+                              <div class="tp-project-4-item-content tp_fade_left">
+                                 <h4 class="tp-project-4-item-title"><a href="portfolio-details.html">Nioh</a></h4>
+                                 <p>From the investor's vision of an elite and refined
+                                    residential community, it transcends the value of
+                                    merely being an upscale living space.</p>
+                                 <div class="tp-project-4-item-list pb-170">
+                                    <ul>
+                                       <li><span>Category:</span> Website</li>
+                                       <li><span>Role:</span> Web designer</li>
+                                       <li><span>Tag:</span> Business, elegant</li>
+                                    </ul>
+                                 </div>
+                                 <div class="tp-project-4-btn">
+                                    <a href="portfolio-details.html">Project details <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                       <path d="M1.51562 14.7968L14.6838 1.62864M3.83594 1.16205C6.96385 4.28996 12.2505 4.06539 15.656 0.659936M15.6533 0.655273C12.2478 4.06072 12.0232 9.34739 15.1511 12.4753" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                                     </svg></span></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7">
+                              <div class="anim-zoomin-wrap">
+                                 <div class="tp-project-4-item-thumb anim-zoomin">
+                                    <a href="portfolio-details.html"><img src="assets/img/project/home-4/project-4-2.jpg" alt=""></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tp-project-4-item-wrapper project-panel" data-bg-color="#121212">
+                     <div class="container container-1520">
+                        <div class="row">
+                           <div class="col-lg-5">
+                              <div class="tp-project-4-item-content tp_fade_left">
+                                 <h4 class="tp-project-4-item-title"><a href="portfolio-details.html">Bizman Sky</a></h4>
+                                 <p>From the investor's vision of an elite and refined
+                                    residential community, it transcends the value of
+                                    merely being an upscale living space.</p>
+                                 <div class="tp-project-4-item-list pb-170">
+                                    <ul>
+                                       <li><span>Category:</span> Website</li>
+                                       <li><span>Role:</span> Web designer</li>
+                                       <li><span>Tag:</span> Business, elegant</li>
+                                    </ul>
+                                 </div>
+                                 <div class="tp-project-4-btn">
+                                    <a href="portfolio-details.html">Project details <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                       <path d="M1.51562 14.7968L14.6838 1.62864M3.83594 1.16205C6.96385 4.28996 12.2505 4.06539 15.656 0.659936M15.6533 0.655273C12.2478 4.06072 12.0232 9.34739 15.1511 12.4753" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                                     </svg></span></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7">
+                              <div class="anim-zoomin-wrap">
+                                 <div class="tp-project-4-item-thumb anim-zoomin">
+                                    <a href="portfolio-details.html"><img src="assets/img/project/home-4/project-4-3.jpg" alt=""></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tp-project-4-item-wrapper project-panel" data-bg-color="#121212">
+                     <div class="container container-1520">
+                        <div class="row">
+                           <div class="col-lg-5">
+                              <div class="tp-project-4-item-content tp_fade_left">
+                                 <h4 class="tp-project-4-item-title"><a href="portfolio-details.html">Timind</a></h4>
+                                 <p>From the investor's vision of an elite and refined
+                                    residential community, it transcends the value of
+                                    merely being an upscale living space.</p>
+                                 <div class="tp-project-4-item-list pb-170">
+                                    <ul>
+                                       <li><span>Category:</span> Website</li>
+                                       <li><span>Role:</span> Web designer</li>
+                                       <li><span>Tag:</span> Business, elegant</li>
+                                    </ul>
+                                 </div>
+                                 <div class="tp-project-4-btn">
+                                    <a href="portfolio-details.html">Project details <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                       <path d="M1.51562 14.7968L14.6838 1.62864M3.83594 1.16205C6.96385 4.28996 12.2505 4.06539 15.656 0.659936M15.6533 0.655273C12.2478 4.06072 12.0232 9.34739 15.1511 12.4753" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                                     </svg></span></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7">
+                              <div class="anim-zoomin-wrap">
+                                 <div class="tp-project-4-item-thumb anim-zoomin">
+                                    <a href="portfolio-details.html"><img src="assets/img/project/home-4/project-4-4.jpg" alt=""></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- project area end -->
+
+
+               <!-- awerd area start -->
+                <section class="tp-awerd-4-ptb pt-140 pb-140">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="tp-awerd-4-heading pb-70">
+                              <span class="tp-service-4-subtitle tp-title-anim">achieved award</span>
+                              <h3 class="tp-section-4-title tp-title-anim">My achievement <br>
+                                 at a glance</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row tp-gx-50">
+                        <div class="col-lg-6">
+                           <div class="tp-awerd-4-item d-flex tp_fade_left mb-50">
+                              <span class="tp-awerd-4-item-sub">2021</span>
+                              <div class="tp-awerd-4-item-content">
+                                 <span>UI/UX design</span>
+                                 <h4 class="tp-awerd-4-item-title">Best graphic design <br>
+                                    awwwards</h4>
+                              </div>
+                              <div class="tp-awerd-4-item-icon">
+                                 <img src="assets/img/awerd/home-4/awerd-icon-1.png" alt="">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="tp-awerd-4-item d-flex tp_fade_right mb-50">
+                              <span class="tp-awerd-4-item-sub">2022</span>
+                              <div class="tp-awerd-4-item-content">
+                                 <span>design</span>
+                                 <h4 class="tp-awerd-4-item-title">Transforming ideas into
+                                    stunning UI designs</h4>
+                              </div>
+                              <div class="tp-awerd-4-item-icon">
+                                 <img src="assets/img/awerd/home-4/awerd-icon-2.png" alt="">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="tp-awerd-4-item d-flex tp_fade_left mb-50">
+                              <span class="tp-awerd-4-item-sub">2023</span>
+                              <div class="tp-awerd-4-item-content">
+                                 <span>Branding</span>
+                                 <h4 class="tp-awerd-4-item-title">Top #10 packaging
+                                    design awards</h4>
+                              </div>
+                              <div class="tp-awerd-4-item-icon">
+                                 <img src="assets/img/awerd/home-4/awerd-icon-3.png" alt="">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="tp-awerd-4-item d-flex tp_fade_right mb-50">
+                              <span class="tp-awerd-4-item-sub">2024</span>
+                              <div class="tp-awerd-4-item-content">
+                                 <span>Motion graphic</span>
+                                 <h4 class="tp-awerd-4-item-title">Best graphic design <br>
+                                    awwwards</h4>
+                              </div>
+                              <div class="tp-awerd-4-item-icon">
+                                 <img src="assets/img/awerd/home-4/awerd-icon-4.png" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                </section>
+               <!-- awerd area start -->
+
+
+               <!-- blog area start -->
+                <section class="tp-blog-4-ptb tp-blog-4-bg pt-170 pb-140">
+                  <div class="container container-1520">
+                     <div class="row tp-gx-40">
+                        <div class="col-lg-4 col-md-6">
+                           <div class="tp-blog-4-item mb-30">
+                              <div class="tp-blog-4-item-thumb mb-20">
+                                 <a href="blog-details.html">
+                                    <img src="assets/img/blog/home-4/blog-4-1.jpg" alt="">
+                                 </a>
+                              </div>
+                              <div class="tp-blog-4-item-content">
+                                 <h4 class="tp-blog-4-item-title"><a href="blog-details.html">Unleashing creativity, one <br>
+                                    project at a time</a></h4>
+                                 <span>April 26, 2025</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="tp-blog-4-item mb-30">
+                              <div class="tp-blog-4-item-thumb mb-20">
+                                 <a href="blog-details.html">
+                                    <img src="assets/img/blog/home-4/blog-4-2.jpg" alt="">
+                                 </a>
+                              </div>
+                              <div class="tp-blog-4-item-content">
+                                 <h4 class="tp-blog-4-item-title"><a href="blog-details.html">Experience the magic of <br>
+                                    good design</a></h4>
+                                 <span>May 14, 2025</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="tp-blog-4-item mb-30">
+                              <div class="tp-blog-4-item-thumb mb-20">
+                                 <a href="blog-details.html">
+                                    <img src="assets/img/blog/home-4/blog-4-3.jpg" alt="">
+                                 </a>
+                              </div>
+                              <div class="tp-blog-4-item-content">
+                                 <h4 class="tp-blog-4-item-title"><a href="blog-details.html">Combining design and strategy <br>
+                                    to make an impact</a></h4>
+                                 <span>February 10, 2025</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                </section>
+               <!-- blog area end -->
+
+
+               <!-- brand area start -->
+               <div class="tp-brand-4-ptb pt-140 pb-140">
+                  <div class="container container-1520">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="tp-brand-4-heading text-center mb-40">
+                              <span class="tp-service-4-subtitle">Clients at the heart of our story</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-2 justify-content-center gx-0">
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                                 <img src="assets/img/brand/home-4/brand-4-1.png" alt="">
+                                 <div class="tp-brand-4-line-text d-flex align-items-center">
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                              <img src="assets/img/brand/home-4/brand-4-2.png" alt="">
+                              <div class="tp-brand-4-line-text d-flex align-items-center">
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                              <img src="assets/img/brand/home-4/brand-4-3.png" alt="">
+                              <div class="tp-brand-4-line-text d-flex align-items-center">
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                              <img src="assets/img/brand/home-4/brand-4-5.png" alt="">
+                              <div class="tp-brand-4-line-text d-flex align-items-center">
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                              <img src="assets/img/brand/home-4/brand-4-6.png" alt="">
+                              <div class="tp-brand-4-line-text d-flex align-items-center">
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                              <img src="assets/img/brand/home-4/brand-4-2.png" alt="">
+                              <div class="tp-brand-4-line-text d-flex align-items-center">
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                              <img src="assets/img/brand/home-4/brand-4-7.png" alt="">
+                              <div class="tp-brand-4-line-text d-flex align-items-center">
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                              <img src="assets/img/brand/home-4/brand-4-8.png" alt="">
+                              <div class="tp-brand-4-line-text d-flex align-items-center">
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                              <img src="assets/img/brand/home-4/brand-4-4.png" alt="">
+                              <div class="tp-brand-4-line-text d-flex align-items-center">
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                                 <span>TopoChico.com</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="tp-brand-4-item p-relative">
+                                 <img src="assets/img/brand/home-4/brand-4-1.png" alt="">
+                                 <div class="tp-brand-4-line-text d-flex align-items-center">
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                    <span>TopoChico.com</span>
+                                 </div>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- brand area end -->
+
+
+               <!-- footer area start -->
+               <section class="tp-footer-4-ptb tp-footer-4-bg pt-100">
+                  <div class="container container-1480">
+                     <div class="tp-footer-4-text text-center">
+                        <h3 class="tp-footer-4-text-title"><a href="mailto:support@nixer.com">support@nixer.com</a></h3>
+                     </div>
+                     <div class="tp-footer-2-wrapper pb-50">
+                        <div class="row">
+                           <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                              <div class="tp-footer-2-widget tp-footer-2-col-1 mb-50">
+                                 <div class="tp-footer-2-logo mb-30">
+                                    <a href="index.html"> <img data-width="120" src="assets/img/logo/logo.png" alt=""></a>
+                                 </div>
+                                 <div class="tp-footer-2-widget-content">
+                                    <p>We can create solutions that <br>
+                                       elevate growth and sales.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                              <div class="tp-footer-2-widget tp-footer-2-col-2 mb-50">
+                                 <h3 class="tp-footer-2-widget-title">Company</h3>
+                                 <div class="tp-footer-2-widget-content">
+                                    <ul>
+                                       <li><a href="#">Home</a></li>
+                                       <li><a href="#">About</a></li>
+                                       <li><a href="#">Contact</a></li>
+                                       <li><a href="#">Blog</a></li>
+                                       <li><a href="#">Landing</a></li>
+                                    </ul>
+                                 </div>
+                              </div> 
+                           </div>
+                           <div class="col-xl-3 col-lg-3 col-md-7 col-sm-6 col-12">
+                              <div class="tp-footer-2-widget tp-footer-2-col-3 mb-50">
+                                 <h3 class="tp-footer-2-widget-title">Address</h3>
+                                 <div class="tp-footer-2-widget-content">
+                                    <div class="tp-footer-2-widget-content-contact">
+                                       <a target="_blank" href="https://www.google.com/maps">Germany — 785 15h Street, Office 478 <br>
+                                          Berlin, De 81566</a>
+                                       <a href="tel:0123456789">(704) 555-0127</a>
+                                       <a href="mailto:contact@nixer.com">contact@nixer.com</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-3 col-lg-3 col-md-5 col-12">
+                              <div class="tp-footer-2-widget tp-footer-2-col-4 mb-50">
+                                 <h3 class="tp-footer-2-widget-title">Newsletter</h3>
+                                 <div class="tp-footer-2-widget-content">
+                                    <div class="tp-footer-2-widget-content-input">
+                                       <form action="index.html">
+                                          <input type="email" placeholder="Enter your email...">
+                                          <button>
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                                <path d="M11.0147 1.06501C11.2216 1.0696 11.4213 1.15574 11.5702 1.30463C11.719 1.45353 11.8052 1.65314 11.8098 1.86013L11.9842 11.7293C11.9832 11.9352 11.9033 12.1299 11.7608 12.2735C11.689 12.3446 11.6041 12.4013 11.5102 12.4403C11.3696 12.4957 11.2141 12.5075 11.0636 12.4744C10.913 12.4413 10.7741 12.3646 10.6643 12.2541L6.20044 7.79031L1.35302 12.6377C1.21018 12.7806 1.0144 12.8588 0.808749 12.8551C0.603095 12.8515 0.404434 12.7663 0.256443 12.6183C0.108463 12.4704 0.0232807 12.2717 0.0196528 12.066C0.0160135 11.8604 0.0942296 11.6646 0.237075 11.5218L5.08449 6.67436L0.62067 2.21053C0.510177 2.10071 0.433531 1.96176 0.400387 1.81121C0.367242 1.66066 0.379096 1.50522 0.43443 1.36452C0.493713 1.22483 0.591954 1.1062 0.717793 1.02232C0.84362 0.938462 0.991896 0.8928 1.14546 0.890625L11.0147 1.06501Z" fill="white"/>
+                                                </svg>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tp-footer-2-copyright-ptb">
+                     <div class="container container-1480">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="tp-footer-2-copyright-text">
+                                 <p>All rights reserved — 2025 © <a href="#">ThemePure</a></p>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="tp-footer-2-copyright-social text-start text-lg-end">
+                                 <a href="#">Linkedin</a>
+                                 <a href="#">Twitter</a>
+                                 <a href="#">Instagram</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- footer area end -->
+            </main>
+
+            
+         </div>
+      </div>
+
+
+
+
+      <!-- JS here -->
+      <script src="assets/js/vendor/jquery.js"></script>
+      <script src="assets/js/bootstrap-bundle.js"></script>
+
+      <script src="assets/js/gsap.js"></script>
+      <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+      <script src="assets/js/gsap-scroll-smoother.js"></script>
+      <script src="assets/js/gsap-scroll-trigger.js"></script>
+      <script src="assets/js/gsap-split-text.js"></script>
+      <script src="assets/js/chroma.min.js"></script>
+      <script src="assets/js/hover-effect.umd.js"></script>
+      <script src="assets/js/webgl.js"></script>
+   
+      <script src='assets/js/three.js'></script>
+      <script src='assets/js/tween-max.js'></script>
+      <script src='assets/js/scroll-magic.js'></script>
+
+      <script src="assets/js/slick.js"></script>
+      <script src="assets/js/swiper-bundle.js"></script>
+      <script src="assets/js/magnific-popup.js"></script>
+      <script src="assets/js/purecounter.js"></script>
+      <script src="assets/js/imagesloaded-pkgd.js"></script>
+      <script src="assets/js/isotope-pkgd.js"></script>
+      <script src="assets/js/ajax-form.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/tp-cursor.js"></script>
+   </body>
+</html>
+

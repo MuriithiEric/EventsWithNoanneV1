@@ -1,0 +1,620 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>About Us - Events with Noanne</title>
+      <meta name="description" content="Discover the story, mission, and vision behind Events with Noanne. We specialize in creating seamless, impactful event experiences for the tech industry.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Place favicon.ico in the root directory -->
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+      <!-- CSS here -->
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+      <link rel="stylesheet" href="assets/css/magnific-popup.css">
+      <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+      <link rel="stylesheet" href="assets/css/spacing.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <!-- Add this to your <head> section -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+      <style>
+         /* Custom Styles for About Us Page */
+         body {
+            background-color: #700273; /* Consistent background color */
+         }
+         .tp-about-us-heading h3 {
+            font-size: 48px;
+            font-weight: 400;
+            color: #fff; /* White text for contrast */
+            line-height: 1.2;
+            margin-bottom: 20px;
+         }
+         .tp-about-us-heading p {
+            font-size: 18px;
+            color: #fff; /* White text for contrast */
+            line-height: 1.6;
+            margin-bottom: 30px;
+         }
+         .tp-about-us-btn a {
+            background-color: #fff; /* White button */
+            color: #700273; /* Purple text */
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+         }
+         .tp-about-us-btn a:hover {
+            background-color: #f0f0f0; /* Light gray on hover */
+         }
+         .tp-funfact-heading h3 {
+            font-size: 36px;
+            font-weight: 400;
+            color: #fff; /* White text for contrast */
+            line-height: 1.3;
+            margin-bottom: 30px;
+         }
+         .tp-funfact-item h4 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff; /* White text for contrast */
+            margin-bottom: 15px;
+         }
+         .tp-funfact-item p {
+            font-size: 16px;
+            color: #fff; /* White text for contrast */
+            line-height: 1.6;
+         }
+         .tp-counter-3-item-title {
+            font-size: 48px;
+            font-weight: 500;
+            color: #fff; /* White text for contrast */
+         }
+         .tp-counter-3-item p {
+            font-size: 18px;
+            color: #fff; /* White text for contrast */
+         }
+         .tp-team-2-item-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff; /* White text for contrast */
+         }
+         .tp-team-2-item p {
+            font-size: 16px;
+            color: #fff; /* White text for contrast */
+         }
+         .tp-brand-4-heading span {
+            font-size: 18px;
+            color: #fff; /* White text for contrast */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+         }
+         .tp-footer-4-ptb {
+            background-color: #121212;
+            color: #fff;
+         }
+         .tp-footer-2-widget-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 20px;
+         }
+         .tp-footer-2-widget-content a {
+            color: #ccc;
+            transition: color 0.3s ease;
+         }
+         .tp-footer-2-widget-content a:hover {
+            color: #700273;
+         }
+
+         /* Navbar Styles */
+         .tp-header-1-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+         }
+         .tp-header-1-menu ul li {
+            position: relative;
+         }
+         .tp-header-1-menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-family: 'Marcellus', serif;
+            font-weight: 500;
+            transition: color 0.3s ease;
+         }
+         .tp-header-1-menu ul li a:hover {
+            color: #ffd700;
+         }
+
+         /* Mobile Menu Styles */
+         .tp-mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #700273; /* Match your theme's primary color */
+            z-index: 1000;
+            transition: left 0.5s ease-in-out; /* Slower transition */
+            overflow-y: auto; /* Allow scrolling if the menu is too long */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center the menu vertically */
+            align-items: center; /* Center the menu horizontally */
+         }
+
+         .tp-mobile-menu.active {
+            left: 0;
+         }
+
+         .tp-mobile-menu-header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+         }
+
+         .tp-close-btn {
+            background: none;
+            border: none;
+            font-size: 40px; /* Larger close button */
+            color: #fff; /* White color for the close button */
+            cursor: pointer;
+            transition: color 0.3s ease;
+         }
+
+         .tp-close-btn:hover {
+            color: #ffffff; /* Gold color on hover */
+         }
+
+         .tp-mobile-menu-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center; /* Center-align menu items */
+         }
+
+         .tp-mobile-menu-nav ul li {
+            padding: 25px 0; /* Increased padding for better spacing */
+         }
+
+         .tp-mobile-menu-nav ul li a {
+            text-decoration: none;
+            color: #fff; /* White text color */
+            font-size: 32px; /* Larger font size */
+            font-family: 'Marcellus', serif; /* Sleek Marcellus font */
+            font-weight: 500; /* Slightly bolder font weight */
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px; /* Space between number and text */
+         }
+
+         .tp-mobile-menu-nav ul li a:hover {
+            color: #ffffff; /* Gold color on hover */
+            transform: translateX(10px); /* Smooth slide effect on hover */
+         }
+
+         /* Add numbers to menu items */
+         .tp-mobile-menu-nav ul li a::before {
+            content: attr(data-number); /* Use data-number attribute for numbers */
+            font-size: 32px; /* Same size as text */
+            font-weight: 500; /* Match font weight */
+            color: #ffffff; /* Gold color for numbers */
+            margin-right: 10px; /* Space between number and text */
+         }
+         /* Social Media Icons */
+.tp-social-icons {
+   display: flex;
+   gap: 15px; /* Space between icons */
+   align-items: center;
+}
+
+.tp-social-icons .social-icon {
+   color: #fff; /* White color for icons */
+   font-size: 20px; /* Icon size */
+   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tp-social-icons .social-icon:hover {
+   color: #ffd700; /* Gold color on hover */
+   transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* "Events with Noanne" for smaller screens */
+.tp-header-text {
+   display: none; /* Hide by default */
+}
+
+@media (max-width: 767.98px) {
+   .tp-social-icons {
+      display: none; /* Hide social icons on smaller screens */
+   }
+   .tp-header-text {
+      display: block; /* Show "Events with Noanne" on smaller screens */
+      text-align: center;
+   }
+   .tp-header-title {
+      font-size: 24px !important;
+      font-weight: 400 !important;
+      color: #fff !important;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
+   }
+}
+
+      </style>
+   </head>
+   <body id="body" class="tp-magic-cursor">
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+      <!-- pre loader area start -->
+      <div id="loading">
+         <div class="loader-mask">
+            <div class="loader">
+              <div></div>
+              <div></div>
+            </div>
+         </div>
+      </div>
+      <!-- pre loader area end -->
+
+      <!-- Begin magic cursor -->
+      <div id="magic-cursor">
+         <div id="ball"></div>
+      </div>
+      <!-- End magic cursor -->
+
+      <!-- back to top start -->
+      <div class="back-to-top-wrapper">
+         <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>               
+         </button>
+      </div>
+      <!-- back to top end -->
+
+      <!-- header area start -->
+      <header id="header-sticky" class="tp-header-1-ptb tp-header-transparent">
+         <div class="tp-header-main-sticky p-relative">
+            <div class="container container-1760">
+               <div class="d-flex justify-content-between align-items-center">
+                  <!-- Social media icons for larger screens -->
+                  <div class="tp-header-1-logo">
+                     <div class="tp-social-icons d-none d-md-flex">
+                        <a href="https://www.instagram.com/eventswithnoanne" target="_blank" class="social-icon">
+                           <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/eventswithnoanne" target="_blank" class="social-icon">
+                           <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com/eventswithnoanne" target="_blank" class="social-icon">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/eventswithnoanne" target="_blank" class="social-icon">
+                           <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@eventswithnoanne" target="_blank" class="social-icon">
+                           <i class="fab fa-tiktok"></i>
+                        </a>
+                     </div>
+                     <!-- "Events with Noanne" for smaller screens -->
+                     <div class="tp-header-text d-md-none">
+                        <h2 class="tp-header-title" style="font-size: 24px; font-weight: 400; color: #fff;">
+                           Events with Noanne
+                        </h2>
+                     </div>
+                  </div>
+                  <div class="tp-header-box d-flex align-items-center justify-content-between">
+                     <div class="tp-header-1-menu">
+                        <div class="tp-main-menu d-none d-md-block">
+                           <!-- <nav>
+                              <ul>
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about-us.html">About Us</a></li>
+                                 <li><a href="services.html">Services</a></li>
+                                 <li><a href="spirit-tech.html">Spirit Tech</a></li>
+                                 <li><a href="portfolio.html">Portfolio</a></li>
+                                 <li><a href="testimonials.html">Testimonials</a></li>
+                                 <li><a href="blog.html">Blog</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                              </ul>
+                           </nav> -->
+                        </div>
+                     </div>
+                     <div class="tp-header-main-right d-flex align-items-center">
+                        <div class="tp-header-main-right-btn d-none d-md-block">
+                           <a href="contact.html" class="tp-btn button-style-1">
+                              <span class="tp-btn-border-wrap">
+                                 <span class="text-1">Get in Touch</span>
+                                 <span class="text-2">Get in Touch</span>
+                              </span>
+                           </a>
+                        </div>
+                        <div class="tp-header-hamburger offcanvas-open-btn">
+                           <button id="open-menu" class="tp-hamburger-btn">
+                              <span></span>
+                              <span></span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- header area end -->
+
+      <!-- Mobile Menu Section -->
+      <div id="mobile-menu" class="tp-mobile-menu">
+         <div class="tp-mobile-menu-header">
+            <button id="close-menu" class="tp-close-btn">
+               <span>&times;</span> <!-- Larger "X" close button -->
+            </button>
+         </div>
+         <nav class="tp-mobile-menu-nav">
+            <ul>
+               <li><a href="index.html" data-number="01">Home</a></li>
+               <!-- <li><a href="about-us.html" data-number="02">About Us</a></li>
+               <li><a href="services.html" data-number="03">Services</a></li>
+               <li><a href="spirit-tech.html" data-number="04">Spirit Tech</a></li>
+               <li><a href="portfolio.html" data-number="05">Portfolio</a></li>
+               <li><a href="testimonials.html" data-number="06">Testimonials</a></li>
+               <li><a href="blog.html" data-number="07">Blog</a></li>
+               <li><a href="contact.html" data-number="08">Contact</a></li> -->
+            </ul>
+         </nav>
+      </div>
+
+      <div id="smooth-wrapper">
+         <div id="smooth-content">
+            <main>
+
+               <!-- about us area start -->
+               <section class="tp-about-us-ptb pt-200 pb-100 p-relative">
+                  <div class="tp-about-us-bg" data-background="assets/img/about/about-us/about-us-overlay.png"></div>
+                  <div class="container container-1720">
+                     <div class="row tp-gx-40">
+                        <div class="col-lg-6">
+                           <div class="tp-about-us-heading mb-40">
+                              <h3 class="tp-breadcrumb-title tp-title-anim">Our Story</h3>
+                              <p class="tp-title-anim">Events with Noanne (EWN) was established to provide world-class event management services, particularly for the tech industry. With a passion for creating seamless, impactful experiences, EWN combines creativity, precision, and innovation to deliver events that inform, inspire, and connect.</p>
+                              <div class="tp-about-us-btn tp-title-anim">
+                                 <a href="contact.html">Contact Us <span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                                    <path d="M0.000244141 7.6864H17.6905M10.719 -0.00012207C10.719 4.25019 14.4209 7.68944 18.9958 7.68944M18.9958 7.6864C14.4209 7.6864 10.719 11.1257 10.719 15.376" stroke="#700273" stroke-width="1.5" stroke-miterlimit="10"/>
+                                  </svg></span></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="anim-zoomin-wrap">
+                              <div class="tp-about-us-thumb anim-zoomin text-end mb-40">
+                                 <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Event Planning">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- about us area end -->
+
+               <!-- fun fact area start -->
+               <section class="tp-funfact-ptb pt-160 pb-120" data-bg-color="#700273">
+                  <div class="container container-1610">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="tp-funfact-heading mb-90">
+                              <h3 class="tp-section-title tp-char-animation">Our Mission & Vision</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="tp-funfact-item mb-40">
+                              <h4 class="tp-funfact-item-title">Our Mission</h4>
+                              <p>To empower individuals, businesses, and organizations by delivering world-class events that leverage technology and creativity to inform, inspire, and connect audiences.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="tp-funfact-item mb-40">
+                              <h4 class="tp-funfact-item-title">Our Vision</h4>
+                              <p>To be the leading event management company for the tech industry in Africa, recognized for excellence, innovation, and unwavering professionalism.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- fun fact area end -->
+
+               <!-- counter area start -->
+               <section class="tp-counter-3-ptb" data-bg-color="#700273">
+                  <div class="container container-1610">
+                     <div class="tp-counter-3-wrapper d-flex">
+                        <div class="tp-counter-3-item text-center mb-40">
+                           <h4 class="tp-counter-3-item-title"><span class="purecounter" data-purecounter-duration="2" data-purecounter-end="5">0</span>+</h4>
+                           <p>Years of Experience</p>
+                        </div>
+                        <div class="tp-counter-3-item text-center mb-40">
+                           <h4 class="tp-counter-3-item-title"><span class="purecounter" data-purecounter-duration="2" data-purecounter-end="100">0</span>+</h4>
+                           <p>Successful Events</p>
+                        </div>
+                        <div class="tp-counter-3-item text-center mb-40">
+                           <h4 class="tp-counter-3-item-title"><span class="purecounter" data-purecounter-duration="2" data-purecounter-end="50">0</span>+</h4>
+                           <p>Corporate Partnerships</p>
+                        </div>
+                        <div class="tp-counter-3-item text-center mb-40">
+                           <h4 class="tp-counter-3-item-title"><span class="purecounter" data-purecounter-duration="2" data-purecounter-end="10">0</span>K+</h4>
+                           <p>Attendees Engaged</p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- counter area end -->
+
+               <!-- team area start -->
+               <section class="tp-team-2-ptb fix p-relative pt-110 pb-90" style="background-color: #800080;">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-12">
+                              <div class="tp-experiance-heading tp-team-2-heading text-center mb-50">
+                                  <h3 class="tp-section-title tp-char-animation" style="color: #FFFFFF;">Our Core Values</h3>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row tp-gx-50">
+                          <div class="col-lg-3 col-md-6">
+                              <div class="tp-team-2-item mb-50" style="background-color: #D0D2D6; padding: 20px; border-radius: 10px;">
+                                  <div class="tp-team-2-item-content text-center">
+                                      <h3 class="tp-team-2-item-title" style="color: #000000;">Innovation</h3>
+                                      <p style="color: #000000;">We embrace creativity and cutting-edge solutions to deliver exceptional event experiences.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                              <div class="tp-team-2-item mb-50" style="background-color: #D0D2D6; padding: 20px; border-radius: 10px;">
+                                  <div class="tp-team-2-item-content text-center">
+                                      <h3 class="tp-team-2-item-title" style="color: #000000;">Excellence</h3>
+                                      <p style="color: #000000;">We strive for perfection in every detail, ensuring flawless execution and client satisfaction.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                              <div class="tp-team-2-item mb-50" style="background-color: #D0D2D6; padding: 20px; border-radius: 10px;">
+                                  <div class="tp-team-2-item-content text-center">
+                                      <h3 class="tp-team-2-item-title" style="color: #000000;">Integrity</h3>
+                                      <p style="color: #000000;">We uphold the highest standards of honesty, transparency, and professionalism in all our dealings.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                              <div class="tp-team-2-item mb-50" style="background-color: #D0D2D6; padding: 20px; border-radius: 10px;">
+                                  <div class="tp-team-2-item-content text-center">
+                                      <h3 class="tp-team-2-item-title" style="color: #000000;">Empowerment</h3>
+                                      <p style="color: #000000;">We empower our clients and team to achieve their goals through collaboration and support.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              
+               <!-- team area end -->
+
+               <!-- footer area start -->
+               <section class="tp-footer-4-ptb pt-100" data-bg-color="#121212">
+                  <div class="container container-1480">
+                     <div class="tp-footer-2-wrapper pb-50">
+                        <div class="row">
+                           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                              <div class="tp-footer-2-widget tp-footer-2-col-1 mb-50">
+                                 <!-- <div class="tp-footer-2-logo mb-30">
+                                    <a href="index.html"> <img data-width="120" src="assets/img/logo/logo.png" alt=""></a>
+                                 </div> -->
+                                 <div class="tp-footer-2-widget-content">
+                                    <p>We create seamless, impactful event experiences that inform, inspire, and connect.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                              <div class="tp-footer-2-widget tp-footer-2-col-2 mb-50">
+                                 <h3 class="tp-footer-2-widget-title">Quick Links</h3>
+                                 <div class="tp-footer-2-widget-content">
+                                    <ul>
+                                       <li><a href="index.html">Home</a></li>
+                                       <li><a href="about-us.html">About Us</a></li>
+                                       <li><a href="services.html">Services</a></li>
+                                       <li><a href="spirit-tech.html">Spirit Tech</a></li>
+                                       <li><a href="portfolio.html">Portfolio</a></li>
+                                       <li><a href="testimonials.html">Testimonials</a></li>
+                                       <li><a href="blog.html">Blog</a></li>
+                                       <li><a href="contact.html">Contact Us</a></li>
+                                   </ul>
+                                 </div>
+                              </div> 
+                           </div>
+                           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                              <div class="tp-footer-2-widget tp-footer-2-col-3 mb-50">
+                                 <h3 class="tp-footer-2-widget-title">Contact Us</h3>
+                                 <div class="tp-footer-2-widget-content">
+                                    <div class="tp-footer-2-widget-content-contact">
+                                       <a href="mailto:info@eventswithnoanne.com">info@eventswithnoanne.com</a>
+                                       <a href="tel:0707843200">0707843200</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tp-footer-2-copyright-ptb">
+                     <div class="container container-1480">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <div class="tp-footer-2-copyright-text text-center">
+                                 <p>© 2025 Events with Noanne. All rights reserved.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- footer area end -->
+            </main>
+         </div>
+      </div>
+
+      <!-- JS here -->
+      <script src="assets/js/vendor/jquery.js"></script>
+      <script src="assets/js/bootstrap-bundle.js"></script>
+      <script src="assets/js/gsap.js"></script>
+      <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+      <script src="assets/js/gsap-scroll-smoother.js"></script>
+      <script src="assets/js/gsap-scroll-trigger.js"></script>
+      <script src="assets/js/gsap-split-text.js"></script>
+      <script src="assets/js/chroma.min.js"></script>
+      <script src="assets/js/webgl.js"></script>
+      <script src='assets/js/three.js'></script>
+      <script src='assets/js/tween-max.js'></script>
+      <script src='assets/js/scroll-magic.js'></script>
+      <script src="assets/js/slick.js"></script>
+      <script src="assets/js/swiper-bundle.js"></script>
+      <script src="assets/js/magnific-popup.js"></script>
+      <script src="assets/js/purecounter.js"></script>
+      <script src="assets/js/imagesloaded-pkgd.js"></script>
+      <script src="assets/js/isotope-pkgd.js"></script>
+      <script src="assets/js/ajax-form.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/tp-cursor.js"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            const openMenuButton = document.getElementById('open-menu');
+            const closeMenuButton = document.getElementById('close-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Open the mobile menu
+            openMenuButton.addEventListener('click', function() {
+               mobileMenu.classList.add('active');
+            });
+
+            // Close the mobile menu
+            closeMenuButton.addEventListener('click', function() {
+               mobileMenu.classList.remove('active');
+            });
+         });
+      </script>
+   </body>
+</html>

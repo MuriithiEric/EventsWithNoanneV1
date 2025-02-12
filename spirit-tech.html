@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>Services - Events with Noanne</title>
-      <meta name="description" content="Discover the comprehensive event management services offered by Events with Noanne. From concept to execution, we specialize in creating seamless, impactful experiences for the tech industry.">
+      <title>Spirit Tech Program - Events with Noanne</title>
+      <meta name="description" content="Spirit Tech is EWN’s flagship initiative focused on delivering value-driven tech learning experiences for children and teens.">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Place favicon.ico in the root directory -->
@@ -18,88 +18,86 @@
       <link rel="stylesheet" href="assets/css/spacing.css">
       <link rel="stylesheet" href="assets/css/animate.css">
       <link rel="stylesheet" href="assets/css/main.css">
-      <!-- Add this to your <head> section -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
       <style>
-         /* Custom Styles for Services Page */
-         body {
-            background-color: #700273; /* Consistent background color */
+         .spirit-tech-hero {
+            background: linear-gradient(rgba(112, 2, 115, 0.9), rgba(112, 2, 115, 0.9)), url('assets/img/spirit-tech-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            text-align: center;
+            color: #fff;
          }
-         .tp-services-heading h3 {
+         .spirit-tech-hero h1 {
             font-size: 48px;
             font-weight: 400;
-            color: #fff; /* White text for contrast */
-            line-height: 1.2;
             margin-bottom: 20px;
          }
-         .tp-services-heading p {
-            font-size: 18px;
-            color: #fff; /* White text for contrast */
-            line-height: 1.6;
-            margin-bottom: 30px;
+         .spirit-tech-hero p {
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
          }
-         .tp-services-item {
-            background-color: #fff; /* White background for service cards */
-            padding: 30px;
+         .course-card {
+            background: #fff;
             border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
             margin-bottom: 30px;
-            transition: all 0.3s ease;
          }
-         .tp-services-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-         }
-         .tp-services-item h4 {
+         .course-card h3 {
             font-size: 24px;
             font-weight: 500;
-            color: #700273; /* Purple text for headings */
+            color: #700273;
             margin-bottom: 15px;
          }
-         .tp-services-item p {
+         .course-card p {
             font-size: 16px;
-            color: #333; /* Dark text for content */
-            line-height: 1.6;
+            color: #333;
          }
-         .tp-services-btn a {
-            background-color: #700273; /* Purple button */
-            color: #fff; /* White text */
-            padding: 12px 24px;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: 500;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
+         .enrollment-section {
+            background: #f9f9f9;
+            padding: 80px 0;
          }
-         .tp-services-btn a:hover {
-            background-color: #5a025a; /* Darker purple on hover */
-         }
-         .tp-event-types-heading h3 {
+         .enrollment-section h2 {
             font-size: 36px;
             font-weight: 400;
-            color: #fff; /* White text for contrast */
-            line-height: 1.3;
-            margin-bottom: 30px;
+            color: #700273;
+            margin-bottom: 40px;
+            text-align: center;
          }
-         .tp-event-types-list ul {
+         .enrollment-section ul {
             list-style: none;
             padding: 0;
-            margin: 0;
+            max-width: 600px;
+            margin: 0 auto;
          }
-         .tp-event-types-list ul li {
+         .enrollment-section ul li {
             font-size: 18px;
-            color: #fff; /* White text for contrast */
-            margin-bottom: 10px;
-            padding-left: 20px;
-            position: relative;
+            color: #333;
+            margin-bottom: 15px;
          }
-         .tp-event-types-list ul li::before {
-            content: "•";
-            color: #fff; /* White bullet points */
-            position: absolute;
-            left: 0;
+         .enrollment-section ul li strong {
+            color: #700273;
          }
-         /* Mobile Menu Styles */
+         .cta-button {
+            display: inline-block;
+            background: #700273;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+         }
+         .cta-button:hover {
+            background: #5a025a;
+         }
+                /* Mobile Menu Styles */
 .tp-mobile-menu {
    position: fixed;
    top: 0;
@@ -215,39 +213,12 @@
 }
       </style>
    </head>
-   <body id="body" class="tp-magic-cursor">
+   <body>
       <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
 
-      <!-- pre loader area start -->
-      <div id="loading">
-         <div class="loader-mask">
-            <div class="loader">
-              <div></div>
-              <div></div>
-            </div>
-         </div>
-      </div>
-      <!-- pre loader area end -->
-
-      <!-- Begin magic cursor -->
-      <div id="magic-cursor">
-         <div id="ball"></div>
-      </div>
-      <!-- End magic cursor -->
-
-      <!-- back to top start -->
-      <div class="back-to-top-wrapper">
-         <button id="back_to_top" type="button" class="back-to-top-btn">
-            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>               
-         </button>
-      </div>
-      <!-- back to top end -->
-
-      <!-- header area start -->
+      <!-- Header Area (Reuse the same header from the main page) -->
       <header id="header-sticky" class="tp-header-1-ptb tp-header-transparent">
          <div class="tp-header-main-sticky p-relative">
             <div class="container container-1760">
@@ -316,9 +287,6 @@
             </div>
          </div>
       </header>
-      <!-- header area end -->
-
-      <!-- Mobile Menu Section -->
       <div id="mobile-menu" class="tp-mobile-menu">
          <div class="tp-mobile-menu-header">
             <button id="close-menu" class="tp-close-btn">
@@ -337,164 +305,117 @@
                <li><a href="contact.html" data-number="08">Contact</a></li>
             </ul>
          </nav>
-      </div>
+      </div> 
 
-      <div id="smooth-wrapper">
-         <div id="smooth-content">
-            <main>
+      <!-- Hero Section -->
+      <section class="spirit-tech-hero">
+         <div class="container">
+            <h1>Spirit Tech Program</h1>
+            <p style="color: white;">Empowering the next generation with cutting-edge tech skills. Our flagship initiative delivers value-driven tech learning experiences for children and teens, preparing them for a tech-enabled future.</p>
+         </div>
+      </section>
 
-               <!-- services area start -->
-               <!-- services area start -->
-<section class="tp-counter-3-ptb"> <!-- Reduced padding-top and padding-bottom -->
-   <div class="tp-services-bg" data-background="assets/img/services/services-bg.jpg"></div>
-   <div class="container container-1720">
-      <div class="row tp-gx-40">
-         <div class="col-lg-12">
-            <div class="tp-services-heading mb-60 text-center"> <!-- Centered the heading -->
-               <h3 class="tp-breadcrumb-title tp-title-anim">Our Event Services</h3>
-               <p class="tp-title-anim">From initial concept to flawless execution, we deliver comprehensive event solutions tailored to your vision.</p>
+      <!-- Course Offerings Section -->
+      <section class="tp-about-3-ptb pt-100 pb-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <h2 class="tp-section-title text-center mb-60">Course Offerings</h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4">
+                  <div class="course-card">
+                     <h3>Cybersecurity Basics</h3>
+                     <p>Learn the fundamentals of cybersecurity, including threat detection, data protection, and safe online practices.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="course-card">
+                     <h3>Programming Languages</h3>
+                     <p>Master the basics of programming with languages like Python, JavaScript, and Scratch, tailored for young learners.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="course-card">
+                     <h3>Design Thinking</h3>
+                     <p>Develop creative problem-solving skills through design thinking methodologies and hands-on projects.</p>
+                  </div>
+               </div>
             </div>
          </div>
-      </div>
-      <div class="row justify-content-center"> <!-- Centered the service items -->
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>End-to-End Event Management</h4>
-               <p>Full-service planning including concept development, logistics coordination, and post-event reporting.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>Hybrid & Virtual Production</h4>
-               <p>Streaming solutions, virtual platforms, and hybrid event integration for global audiences.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>Event Technology Solutions</h4>
-               <p>Interactive apps, live polling, registration systems, and real-time analytics integration.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>Creative Concept Design</h4>
-               <p>Themed environments, stage design, and brand-aligned experiential activations.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>Vendor Management</h4>
-               <p>Coordination of catering, AV production, venues, and staffing through vetted partnerships.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>On-Site Execution</h4>
-               <p>Full technical production, guest management, and real-time troubleshooting during events.</p>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!-- services area end -->
+      </section>
 
-<!-- event types area start -->
-<section class="tp-event-types-ptb pt-100 pb-80" data-bg-color="#700273"> <!-- Reduced padding-top and padding-bottom -->
-   <div class="container container-1610">
-      <div class="row">
-         <div class="col-lg-12">
-            <div class="tp-event-types-heading mb-60 text-center"> <!-- Centered the heading -->
-               <h3 class="tp-section-title tp-char-animation">Event Types We Specialize In</h3>
+      <!-- Enrollment Information Section -->
+      <section class="enrollment-section">
+         <div class="container">
+            <h2>Enrollment Information</h2>
+            <ul>
+               <li><strong>Course Schedules:</strong> Weekdays (4 PM - 6 PM) & Weekends (10 AM - 12 PM)</li>
+               <li><strong>Pricing:</strong> $200 per course (Scholarships available for eligible students)</li>
+               <li><strong>Contact:</strong> Email <a href="mailto:info@eventswithnoanne.com">info@eventswithnoanne.com</a> or call <a href="tel:0707843200">0707843200</a> for inquiries.</li>
+            </ul>
+            <div class="text-center">
+               <a href="contact.html" class="cta-button">Enroll Now</a>
             </div>
          </div>
-      </div>
-      <div class="row justify-content-center"> <!-- Centered the event types list -->
-         <div class="col-lg-6">
-            <div class="tp-event-types-list">
-               <ul>
-                  <li>Product Launches</li>
-                  <li>Exhibitions and Expos</li>
-                  <li>Corporate Meetings and Celebrations</li>
-                  <li>Conferences and Seminars</li>
-                  <li>Hackathons and Coding Competitions</li>
-               </ul>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="tp-event-types-list">
-               <ul>
-                  <li>Developer Summits</li>
-                  <li>Networking Mixers</li>
-                  <li>Training Workshops and Certification Programs</li>
-                  <li>Startup Showcases and Demo Days</li>
-               </ul>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!-- event types area end -->
-               <!-- event types area end -->
+      </section>
 
-               <!-- footer area start -->
-               <section class="tp-footer-4-ptb pt-100" data-bg-color="#121212">
-                  <div class="container container-1480">
-                     <div class="tp-footer-2-wrapper pb-50">
-                        <div class="row">
-                           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                              <div class="tp-footer-2-widget tp-footer-2-col-1 mb-50">
-                                 <div class="tp-footer-2-widget-content">
-                                    <p>We create seamless, impactful event experiences that inform, inspire, and connect.</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="tp-footer-2-widget tp-footer-2-col-2 mb-50">
-                                 <h3 class="tp-footer-2-widget-title">Quick Links</h3>
-                                 <div class="tp-footer-2-widget-content">
-                                    <ul>
-                                       <li><a href="index.html">Home</a></li>
-                                       <li><a href="about-us.html">About Us</a></li>
-                                       <li><a href="service.html">Services</a></li>
-                                       <li><a href="spirit-tech.html">Spirit Tech</a></li>
-                                       <li><a href="portfolio.html">Portfolio</a></li>
-                                       <li><a href="testimonials.html">Testimonials</a></li>
-                                       <li><a href="blog.html">Blog</a></li>
-                                       <li><a href="contact.html">Contact Us</a></li>
-                                   </ul>
-                                 </div>
-                              </div> 
-                           </div>
-                           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                              <div class="tp-footer-2-widget tp-footer-2-col-3 mb-50">
-                                 <h3 class="tp-footer-2-widget-title">Contact Us</h3>
-                                 <div class="tp-footer-2-widget-content">
-                                    <div class="tp-footer-2-widget-content-contact">
-                                       <a href="mailto:info@eventswithnoanne.com">info@eventswithnoanne.com</a>
-                                       <a href="tel:0707843200">0707843200</a>
-                                    </div>
-                                 </div>
-                              </div>
+      <!-- Footer Area (Reuse the same footer from the main page) -->
+      <section class="tp-footer-4-ptb pt-100" data-bg-color="#121212">
+         <div class="container container-1480">
+            <div class="tp-footer-2-wrapper pb-50">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                     <div class="tp-footer-2-widget tp-footer-2-col-1 mb-50">
+                        <div class="tp-footer-2-widget-content">
+                           <p>We create seamless, impactful event experiences that inform, inspire, and connect.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                     <div class="tp-footer-2-widget tp-footer-2-col-2 mb-50">
+                        <h3 class="tp-footer-2-widget-title">Quick Links</h3>
+                        <div class="tp-footer-2-widget-content">
+                           <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about-us.html">About Us</a></li>
+                              <li><a href="service.html">Services</a></li>
+                              <li><a href="spirit-tech.html">Spirit Tech</a></li>
+                              <li><a href="portfolio.html">Portfolio</a></li>
+                              <li><a href="testimonials.html">Testimonials</a></li>
+                              <li><a href="blog.html">Blog</a></li>
+                              <li><a href="contact.html">Contact Us</a></li>
+                          </ul>
+                        </div>
+                     </div> 
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                     <div class="tp-footer-2-widget tp-footer-2-col-3 mb-50">
+                        <h3 class="tp-footer-2-widget-title">Contact Us</h3>
+                        <div class="tp-footer-2-widget-content">
+                           <div class="tp-footer-2-widget-content-contact">
+                              <a href="mailto:info@eventswithnoanne.com">info@eventswithnoanne.com</a>
+                              <a href="tel:0707843200">0707843200</a>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="tp-footer-2-copyright-ptb">
-                     <div class="container container-1480">
-                        <div class="row">
-                           <div class="col-lg-12">
-                              <div class="tp-footer-2-copyright-text text-center">
-                                 <p>© 2025 Events with Noanne. All rights reserved.</p>
-                              </div>
-                           </div>
-                        </div>
+               </div>
+            </div>
+         </div>
+         <div class="tp-footer-2-copyright-ptb">
+            <div class="container container-1480">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="tp-footer-2-copyright-text text-center">
+                        <p>© 2025 Events with Noanne. All rights reserved.</p>
                      </div>
                   </div>
-               </section>
-               <!-- footer area end -->
-            </main>
+               </div>
+            </div>
          </div>
-      </div>
+      </section>
 
       <!-- JS here -->
       <script src="assets/js/vendor/jquery.js"></script>
@@ -535,5 +456,5 @@
             });
          });
       </script>
-      </body>
-      </html>
+   </body>
+</html>

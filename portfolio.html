@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>Contact Us - Events With Noanne</title>
-      <meta name="description" content="">
+      <title>Our Portfolio - Events with Noanne</title>
+      <meta name="description" content="Spirit Tech is EWN’s flagship initiative focused on delivering value-driven tech learning experiences for children and teens.">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Place favicon.ico in the root directory -->
@@ -18,13 +18,81 @@
       <link rel="stylesheet" href="assets/css/spacing.css">
       <link rel="stylesheet" href="assets/css/animate.css">
       <link rel="stylesheet" href="assets/css/main.css">
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
       <style>
-          body {
-            background-color: #800080; /* Updated background color */
+         /* Portfolio Section Styling */
+         
+         .tp-portfolio-col-2-ptb {
+            background: linear-gradient(rgba(112, 2, 115, 0.9), rgba(112, 2, 115, 0.9)), url('assets/img/spirit-tech-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            color: #fff;
          }
-             /* Mobile Menu Styles */
-.tp-mobile-menu {
+         .tp-blog-heading.portfolio {
+            text-align: center;
+         }
+         .tp-breadcrumb-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 10px;
+         }
+         .tp-breadcrumb-title {
+            font-size: 48px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #fff;
+         }
+         .tp-portfolio-col-2-heading p {
+            font-size: 20px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 0 auto;
+         }
+         .tp-portfolio-6-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .tp-portfolio-6-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+         }
+         .tp-portfolio-6-item-thumb img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+         }
+         .tp-portfolio-6-item-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(112, 2, 115, 0.9);
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+         }
+         .tp-portfolio-6-item:hover .tp-portfolio-6-item-content {
+            transform: translateY(0);
+         }
+         .tp-portfolio-6-item-content-hide span {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+         }
+         .tp-portfolio-6-item-content-hide h4 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+            margin-top: 10px;
+         }
+         .tp-mobile-menu {
    position: fixed;
    top: 0;
    left: -100%;
@@ -104,8 +172,9 @@
    margin-right: 10px; /* Space between number and text */
 }
 
-         /* Social Media Icons */
-         .tp-social-icons {
+
+                  /* Social Media Icons */
+.tp-social-icons {
    display: flex;
    gap: 15px; /* Space between icons */
    align-items: center;
@@ -136,56 +205,14 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
    }
 }
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@400;600;700&display=swap');
-
       </style>
    </head>
-   <body id="body" class="tp-magic-cursor">
+   <body>
       <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
 
-
-      <!-- pre loader area start -->
-      <div id="loading">
-         <div class="loader-mask">
-            <div class="loader">
-              <div></div>
-              <div></div>
-            </div>
-         </div>
-      </div>
-      <!-- pre loader area end -->
-
-      <!-- Begin magic cursor  
-      ======================== -->
-      <div id="magic-cursor">
-         <div id="ball"></div>
-      </div>
-      <!-- End magic cursor -->
-
-      
-      <!-- back to top start -->
-      <div class="back-to-top-wrapper">
-         <button id="back_to_top" type="button" class="back-to-top-btn">
-            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>               
-         </button>
-      </div>
-      <!-- back to top end -->
-
-
-
-      <!-- cart mini area end -->
-
-
-      <!-- offcanvas area start -->
-      
-
-      <!-- offcanvas area end -->
-
-
+      <!-- Header Area -->
       <header id="header-sticky" class="tp-header-1-ptb tp-header-transparent">
          <div class="tp-header-main-sticky p-relative">
             <div class="container container-1760">
@@ -219,18 +246,7 @@
                   <div class="tp-header-box d-flex align-items-center justify-content-between">
                      <div class="tp-header-1-menu">
                         <div class="tp-main-menu d-none d-md-block">
-                           <!-- <nav>
-                              <ul>
-                                 <li><a href="index.html">Home</a></li>
-                                 <li><a href="about-us.html">About Us</a></li>
-                                 <li><a href="service.html">Services</a></li>
-                                 <li><a href="spirit-tech.html">Spirit Tech</a></li>
-                                 <li><a href="portfolio.html">Portfolio</a></li>
-                                 <li><a href="testimonials.html">Testimonials</a></li>
-                                 <li><a href="blog.html">Blog</a></li>
-                                 <li><a href="contact.html">Contact</a></li>
-                              </ul>
-                           </nav> -->
+                           <!-- Navigation links for larger screens -->
                         </div>
                      </div>
                      <div class="tp-header-main-right d-flex align-items-center">
@@ -254,10 +270,12 @@
             </div>
          </div>
       </header>
+
+      <!-- Mobile Menu -->
       <div id="mobile-menu" class="tp-mobile-menu">
          <div class="tp-mobile-menu-header">
             <button id="close-menu" class="tp-close-btn">
-               <span>&times;</span> <!-- Larger "X" close button -->
+               <span>&times;</span>
             </button>
          </div>
          <nav class="tp-mobile-menu-nav">
@@ -272,110 +290,114 @@
                <li><a href="contact.html" data-number="08">Contact</a></li>
             </ul>
          </nav>
-      </div> 
+      </div>
 
+      <!-- Portfolio Section -->
       <div id="smooth-wrapper">
          <div id="smooth-content">
             <main>
-
-               <!-- contact area start -->
-                <section class="tp-team-ptb pt-200 pb-100 p-relative">
+               <!-- portfolio area start -->
+               <section class="tp-portfolio-col-2-ptb pt-235 pb-160 p-relative">
                   <div class="tp-about-me-bg" data-background="assets/img/about/about-me/about-me-bg.png"></div>
-                   <div class="container">
-                     <div class="row">
-                        <div class="col-lg-12">
-                           <div class="tp-team-heading p-relative mb-40">
-                              <h3 class="tp-breadcrumb-title tp-title-anim" style="color:#ffffff;">Contact us, we're <br>
-                                 here to help</h3>
-                           <div class="tp-pricing-heading contact z-index-1">
-                              <p style="color:#ffffff;">Do you have a question, need assistance, or simply <br>
-                                 want to get in touch? Look no further!</p>
+                  <div class="container">
+                     <div class="col-lg-12">
+                        <!-- Emphasizing "Events with Noanne" -->
+                        
+                        <div class="tp-hero-3-conetnt text-center">
+                           <div class="tp-hero-3-heading tp_fade_anim" data-delay="0.5">
+                              <h3 class="tp-hero-3-title">
+                                 Unforgettable <br> Events, Seamlessly Planned
+                              </h3>
+                              <p>From intimate gatherings to grand celebrations, <b>Events with Noanne</b> ensures your vision comes to life with precision, creativity, and elegance.</p>
                            </div>
-                           </div>
+                          
                         </div>
                      </div>
-                   </div>
-                </section>
-               <!-- contact area end -->
-
-
-               <!-- contact area start -->
-               <section class="tp-contact-ptb">
-                  <div class="tp-contact-box tp-contact-noice p-relative" data-bg-color="#1E1E1E">
-                     <div class="container-fluid gx-0">
-                        <div class="row gx-0">
-                           <div class="col-xl-6 order-2 order-xl-1">
-                              <div class="tp-contact-thumb">
-                                 <img src="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                     
+                      <div class="row">
+                          <!-- Event 1 -->
+                          <div class="col-lg-6 col-md-6">
+                              <div class="tp-portfolio-6-item anim-zoomin-wrap p-relative mb-30">
+                                  <div class="tp-portfolio-6-item-thumb anim-zoomin">
+                                      <a href="#
+">
+                                          <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg" alt="Networking Event">
+                                      </a>
+                                  </div>
+                                  <div class="tp-portfolio-6-item-content">
+                                      <div class="tp-portfolio-6-item-content-hide">
+                                          <span>Nov 2024</span>
+                                          <h4 class="tp-portfolio-6-item-title"><a href="#
+">Professional Networking</a></h4>
+                                      </div>
+                                  </div>
                               </div>
-                           </div>
-                           <div class="col-xl-6 order-1 order-xl-2">
-                              <div class="tp-contactform-wrap">
-                                 <h4 class="tp-contactform-title">Contact Us</h4>
-                                 <form id="contact-form" action="assets/mail.php" method="post">
-                                    <!-- Name Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Name</label>
-                                       <input name="name" type="text" placeholder="Enter your name" required>
-                                    </div>
-                                    <!-- Email Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Email</label>
-                                       <input name="email" type="email" placeholder="email@example.com" required>
-                                    </div>
-                                    <!-- Subject Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Subject</label>
-                                       <input name="subject" type="text" placeholder="Enter the subject" required>
-                                    </div>
-                                    <!-- Event Type Field (Checkboxes) -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Event Type</label>
-                                       <div class="event-type-checkboxes">
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Corporate Event"> Corporate Event
-                                          </label>
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Wedding"> Wedding
-                                          </label>
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Conference"> Conference
-                                          </label>
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Workshop"> Workshop
-                                          </label>
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Other"> Other
-                                          </label>
-                                       </div>
-                                    </div>
-                                    <!-- Preferred Date Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Preferred Date</label>
-                                       <input name="preferred-date" type="date" required>
-                                    </div>
-                                    <!-- Message Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Message</label>
-                                       <textarea name="message" placeholder="Enter your message" required></textarea>
-                                    </div>
-                                    <!-- Submit Button -->
-                                    <div class="tp-contactform-btn">
-                                       <button class="w-100" type="submit">Send Message</button>
-                                       <p class="ajax-response mt-5"></p>
-                                    </div>
-                                 </form>
+                          </div>
+                          <!-- Event 2 -->
+                          <div class="col-lg-6 col-md-6">
+                              <div class="tp-portfolio-6-item anim-zoomin-wrap p-relative mb-30">
+                                  <div class="tp-portfolio-6-item-thumb anim-zoomin">
+                                      <a href="#
+">
+                                          <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Casual Mixer">
+                                      </a>
+                                  </div>
+                                  <div class="tp-portfolio-6-item-content">
+                                      <div class="tp-portfolio-6-item-content-hide">
+                                          <span>April 2024</span>
+                                          <h4 class="tp-portfolio-6-item-title"><a href="#
+">Casual Business Mixer</a></h4>
+                                      </div>
+                                  </div>
                               </div>
-                           </div>
-                        </div>
-                     </div>
+                          </div>
+                          <!-- Event 3 -->
+                       
+                          <!-- Event 5 -->
+                          <div class="col-lg-6 col-md-6">
+                              <div class="tp-portfolio-6-item anim-zoomin-wrap p-relative mb-30">
+                                  <div class="tp-portfolio-6-item-thumb anim-zoomin">
+                                      <a href="#
+">
+                                          <img src="https://images.pexels.com/photos/6186139/pexels-photo-6186139.jpeg" alt="Industry Panel">
+                                      </a>
+                                  </div>
+                                  <div class="tp-portfolio-6-item-content">
+                                      <div class="tp-portfolio-6-item-content-hide">
+                                          <span>May 2024</span>
+                                          <h4 class="tp-portfolio-6-item-title"><a href="#
+">Industry Insights Panel</a></h4>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Event 6 -->
+                          <div class="col-lg-6 col-md-6">
+                              <div class="tp-portfolio-6-item anim-zoomin-wrap p-relative mb-30">
+                                  <div class="tp-portfolio-6-item-thumb anim-zoomin">
+                                      <a href="#
+">
+                                          <img src="https://images.pexels.com/photos/3182787/pexels-photo-3182787.jpeg" alt="Business Conference">
+                                      </a>
+                                  </div>
+                                  <div class="tp-portfolio-6-item-content">
+                                      <div class="tp-portfolio-6-item-content-hide">
+                                          <span>May 2024</span>
+                                          <h4 class="tp-portfolio-6-item-title"><a href="#
+">Annual Business Conference</a></h4>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-               </section>
-               <!-- contact area end -->
+              </section>
+              
+              
+               <!-- portfolio area end -->
             </main>
 
-
-            <!-- footer area start -->
+            <!-- Footer Area -->
             <section class="tp-footer-4-ptb pt-100" data-bg-color="#121212">
                <div class="container container-1480">
                   <div class="tp-footer-2-wrapper pb-50">
@@ -400,7 +422,7 @@
                                     <li><a href="testimonials.html">Testimonials</a></li>
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
-                                 </ul>
+                                </ul>
                               </div>
                            </div> 
                         </div>
@@ -430,55 +452,45 @@
                   </div>
                </div>
             </section>
-            <!-- footer area end -->
-         </div>
-      </div>
-
-
-
-
-      <!-- JS here -->
-      <script src="assets/js/vendor/jquery.js"></script>
-      <script src="assets/js/bootstrap-bundle.js"></script>
-
-      <script src="assets/js/gsap.js"></script>
-      <script src="assets/js/gsap-scroll-to-plugin.js"></script>
-      <script src="assets/js/gsap-scroll-smoother.js"></script>
-      <script src="assets/js/gsap-scroll-trigger.js"></script>
-      <script src="assets/js/gsap-split-text.js"></script>
-      <script src="assets/js/chroma.min.js"></script>
-      <script src="assets/js/webgl.js"></script>
-   
-      <script src='assets/js/three.js'></script>
-      <script src='assets/js/tween-max.js'></script>
-      <script src='assets/js/scroll-magic.js'></script>
-
-      <script src="assets/js/slick.js"></script>
-      <script src="assets/js/swiper-bundle.js"></script>
-      <script src="assets/js/magnific-popup.js"></script>
-      <script src="assets/js/purecounter.js"></script>
-      <script src="assets/js/imagesloaded-pkgd.js"></script>
-      <script src="assets/js/isotope-pkgd.js"></script>
-      <script src="assets/js/ajax-form.js"></script>
-      <script src="assets/js/main.js"></script>
-      <script src="assets/js/tp-cursor.js"></script>
-      <script>
-         document.addEventListener('DOMContentLoaded', function() {
-            const openMenuButton = document.getElementById('open-menu');
-            const closeMenuButton = document.getElementById('close-menu');
-            const mobileMenu = document.getElementById('mobile-menu');
       
-            // Open the mobile menu
-            openMenuButton.addEventListener('click', function() {
-               mobileMenu.classList.add('active');
-            });
-      
-            // Close the mobile menu
-            closeMenuButton.addEventListener('click', function() {
-               mobileMenu.classList.remove('active');
-            });
-         });
-      </script>
-   </body>
-</html>
-
+            <!-- JS here -->
+            <script src="assets/js/vendor/jquery.js"></script>
+            <script src="assets/js/bootstrap-bundle.js"></script>
+            <script src="assets/js/gsap.js"></script>
+            <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+            <script src="assets/js/gsap-scroll-smoother.js"></script>
+            <script src="assets/js/gsap-scroll-trigger.js"></script>
+            <script src="assets/js/gsap-split-text.js"></script>
+            <script src="assets/js/chroma.min.js"></script>
+            <script src="assets/js/webgl.js"></script>
+            <script src='assets/js/three.js'></script>
+            <script src='assets/js/tween-max.js'></script>
+            <script src='assets/js/scroll-magic.js'></script>
+            <script src="assets/js/slick.js"></script>
+            <script src="assets/js/swiper-bundle.js"></script>
+            <script src="assets/js/magnific-popup.js"></script>
+            <script src="assets/js/purecounter.js"></script>
+            <script src="assets/js/imagesloaded-pkgd.js"></script>
+            <script src="assets/js/isotope-pkgd.js"></script>
+            <script src="assets/js/ajax-form.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="assets/js/tp-cursor.js"></script>
+            <script>
+               document.addEventListener('DOMContentLoaded', function() {
+                  const openMenuButton = document.getElementById('open-menu');
+                  const closeMenuButton = document.getElementById('close-menu');
+                  const mobileMenu = document.getElementById('mobile-menu');
+            
+                  // Open the mobile menu
+                  openMenuButton.addEventListener('click', function() {
+                     mobileMenu.classList.add('active');
+                  });
+            
+                  // Close the mobile menu
+                  closeMenuButton.addEventListener('click', function() {
+                     mobileMenu.classList.remove('active');
+                  });
+               });
+            </script>
+         </body>
+      </html>

@@ -317,6 +317,54 @@
         padding-left: 30px;
     }
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ensures proper alignment */
+    gap: 20px;
+}
+
+.col-lg-3 {
+    flex: 1 1 calc(25% - 20px); /* Ensures 4 columns fit in one row */
+    min-width: 250px; /* Prevents text compression */
+    display: flex;
+}
+
+.course-card {
+    background: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 230px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    background: #eceeef; /* Slightly darker gray on hover */
+}
+
+
+/* Ensures consistent text formatting */
+.course-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 1rem;
+    flex-grow: 1; /* Helps balance text within each card */
+    line-height: 1.5;
+}
+
 </style>
       </style>
    </head>
@@ -407,12 +455,12 @@
                <li><a href="service.html" data-number="03">Services</a></li>
                <li><a href="spirit-tech.html" data-number="04">Spirit Tech</a></li>
                <li><a href="portfolio.html" data-number="05">Portfolio</a></li>
-               <li><a href="testimonials.html" data-number="06">Testimonials</a></li>
-               <li><a href="blog.html" data-number="07">Blog</a></li>
-               <li><a href="contact.html" data-number="08">Contact</a></li>
+               <!-- <li><a href="testimonials.html" data-number="06">Testimonials</a></li> -->
+               <li><a href="blog.html" data-number="06">Blog</a></li>
+               <li><a href="contact.html" data-number="07">Contact</a></li>
             </ul>
          </nav>
-      </div> 
+      </div>  
 
       <!-- Hero Section -->
       <section class="spirit-tech-hero">
@@ -440,25 +488,32 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-lg-4">
+               <div class="col-md-6 col-lg-3">
                   <div class="course-card">
                      <h3>Cybersecurity Basics</h3>
                      <p>Learn the fundamentals of cybersecurity, including threat detection, data protection, and safe online practices.</p>
                   </div>
                </div>
-               <div class="col-lg-4">
+               <div class="col-md-6 col-lg-3">
                   <div class="course-card">
                      <h3>Programming Languages</h3>
                      <p>Master the basics of programming with languages like Python, JavaScript, and Scratch, tailored for young learners.</p>
                   </div>
                </div>
-               <div class="col-lg-4">
+               <div class="col-md-6 col-lg-3">
                   <div class="course-card">
                      <h3>Design Thinking</h3>
                      <p>Develop creative problem-solving skills through design thinking methodologies and hands-on projects.</p>
                   </div>
                </div>
+               <div class="col-md-6 col-lg-3">
+                  <div class="course-card">
+                     <h3>AI Training</h3>
+                     <p>Learn all you need to know about AI/ML.</p>
+                  </div>
+               </div>
             </div>
+            
          </div>
       </section>
 
@@ -499,7 +554,7 @@
                               <li><a href="service.html">Services</a></li>
                               <li><a href="spirit-tech.html">Spirit Tech</a></li>
                               <li><a href="portfolio.html">Portfolio</a></li>
-                              <li><a href="testimonials.html">Testimonials</a></li>
+                              <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
                               <li><a href="blog.html">Blog</a></li>
                               <li><a href="contact.html">Contact Us</a></li>
                           </ul>

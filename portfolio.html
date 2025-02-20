@@ -63,10 +63,12 @@
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
          }
          .tp-portfolio-6-item-thumb img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-         }
+    width: 100%; /* Ensures images take up full width */
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px; /* Optional: Gives a softer edge */
+}
+
          .tp-portfolio-6-item-content {
             position: absolute;
             bottom: 0;
@@ -285,9 +287,9 @@
                <li><a href="service.html" data-number="03">Services</a></li>
                <li><a href="spirit-tech.html" data-number="04">Spirit Tech</a></li>
                <li><a href="portfolio.html" data-number="05">Portfolio</a></li>
-               <li><a href="testimonials.html" data-number="06">Testimonials</a></li>
-               <li><a href="blog.html" data-number="07">Blog</a></li>
-               <li><a href="contact.html" data-number="08">Contact</a></li>
+               <!-- <li><a href="testimonials.html" data-number="06">Testimonials</a></li> -->
+               <li><a href="blog.html" data-number="06">Blog</a></li>
+               <li><a href="contact.html" data-number="07">Contact</a></li>
             </ul>
          </nav>
       </div>
@@ -419,7 +421,7 @@
                                     <li><a href="service.html">Services</a></li>
                                     <li><a href="spirit-tech.html">Spirit Tech</a></li>
                                     <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                 </ul>

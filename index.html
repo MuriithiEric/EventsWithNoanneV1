@@ -207,6 +207,113 @@
    }
 }
 
+.testimonials-hero {
+            background: linear-gradient(rgba(112, 2, 115, 0.9), rgba(112, 2, 115, 0.9)), url('assets/img/testimonials-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            text-align: center;
+            color: #fff;
+            font-family: 'Marcellus', serif;
+            font-weight: 100;
+            font-size: 30px;
+         }
+         .testimonials-hero h2 {
+            font-size: 48px;
+            font-weight: 200;
+            margin-bottom: 20px;
+            color: white;
+            align-items: left;
+         }
+         .testimonials-hero p {
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+         }
+         .testimonial-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+         }
+         .testimonial-card h3 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #700273;
+            margin-bottom: 15px;
+         }
+         .testimonial-card p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+         }
+         .testimonial-card .author {
+            display: flex;
+            align-items: center;
+         }
+         .testimonial-card .author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+         }
+         .testimonial-card .author h4 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #700273;
+            margin-bottom: 5px;
+         }
+         .testimonial-card .author p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+         }
+         .testimonial-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            height: 100%; /* Ensure all cards have the same height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute space evenly */
+         }
+      
+         .testimonial-card p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+            flex-grow: 1; /* Allow the text to grow and fill available space */
+         }
+      
+         .testimonial-card .author {
+            display: flex;
+            align-items: center;
+         }
+      
+         .testimonial-card .author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+         }
+      
+         .testimonial-card .author h4 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #700273;
+            margin-bottom: 5px;
+         }
+      
+         .testimonial-card .author p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+         }
+      
 
       </style>
    </head>
@@ -458,47 +565,145 @@
                   <div class="container container-1610">
                      <div class="row">
                         <div class="col-lg-12">
-                           <div class="tp-about-3-heading mb-110">
+                           <div class="tp-about-3-heading mb-110 text-center">
                               <h3 class="tp-section-title tp-char-animation">Our Achievements</h3>
                            </div>
                         </div>
                      </div>
-                     <div class="tp-counter-3-wrapper d-flex">
-                        <div class="tp-counter-3-item text-center mb-40">
-                           <h4 class="tp-counter-3-item-title"><span class="purecounter" data-purecounter-duration="2" data-purecounter-end="5">0</span>+</h4>
-                           <p>Years of Experience</p>
+                     <div class="row">
+                        <!-- Counter Item 1 -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                           <div class="tp-counter-3-item text-center mb-40">
+                              <h4 class="tp-counter-3-item-title">
+                                 <span class="purecounter" data-purecounter-duration="2" data-purecounter-end="5">0</span>+
+                              </h4>
+                              <p>Years of Experience</p>
+                           </div>
                         </div>
-                        <div class="tp-counter-3-item text-center mb-40">
-                           <h4 class="tp-counter-3-item-title"><span class="purecounter" data-purecounter-duration="2" data-purecounter-end="100">0</span>+</h4>
-                           <p>Successful Events</p>
+                        <!-- Counter Item 2 -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                           <div class="tp-counter-3-item text-center mb-40">
+                              <h4 class="tp-counter-3-item-title">
+                                 <span class="purecounter" data-purecounter-duration="2" data-purecounter-end="100">0</span>+
+                              </h4>
+                              <p>Successful Events</p>
+                           </div>
                         </div>
-                        <div class="tp-counter-3-item text-center mb-40">
-                           <h4 class="tp-counter-3-item-title"><span class="purecounter" data-purecounter-duration="2" data-purecounter-end="50">0</span>+</h4>
-                           <p>Corporate Partnerships</p>
+                        <!-- Counter Item 3 -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                           <div class="tp-counter-3-item text-center mb-40">
+                              <h4 class="tp-counter-3-item-title">
+                                 <span class="purecounter" data-purecounter-duration="2" data-purecounter-end="50">0</span>+
+                              </h4>
+                              <p>Corporate Partnerships</p>
+                           </div>
                         </div>
-                        <div class="tp-counter-3-item text-center mb-40">
-                           <h4 class="tp-counter-3-item-title"><span class="purecounter" data-purecounter-duration="2" data-purecounter-end="10">0</span>K+</h4>
-                           <p>Attendees Engaged</p>
+                        <!-- Counter Item 4 -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                           <div class="tp-counter-3-item text-center mb-40">
+                              <h4 class="tp-counter-3-item-title">
+                                 <span class="purecounter" data-purecounter-duration="2" data-purecounter-end="10">0</span>K+
+                              </h4>
+                              <p>Attendees Engaged</p>
+                           </div>
                         </div>
                      </div>
                   </div>
                </section>
+               
                <!-- achievements area end -->
  
                <!-- about area start -->
                <section class="tp-funfact-ptb pt-160 pb-120">
                   <div class="container container-1610">
-                     <div class="row">
-                        <div class="col-lg-12">
-                           <div class="tp-funfact-heading mb-90">
-                              <h3 class="tp-section-title">At Events with Noanne, we bring your vision to life with precision and creativity.</h3>
-                              <p style="color: #ffffff;">Whether you're hosting a corporate gathering, a tech event, or a private celebration, our expertise ensures your event is nothing short of extraordinary.</p>
-                              <p style="color: #ffffff;">What are you waiting for? Plan with us today and let us turn your vision into reality.</p>
+                     <div class="row align-items-center">
+                        <!-- Left Column: Title -->
+                        <div class="col-lg-6">
+                           <div class="tp-funfact-heading">
+                              <h3 class="tp-section-title">What We Do</h3>
+                           </div>
+                        </div>
+                        <!-- Right Column: Description -->
+                        <div class="col-lg-6">
+                           <div class="tp-funfact-text">
+                              <p style="color: #ffffff;">
+                                 At Events with Noanne, we bring your vision to life with precision and creativity.
+                              </p>
+                              <p style="color: #ffffff;">
+                                 Whether you're hosting a corporate gathering, a tech event, or a private celebration, our expertise ensures your event is nothing short of extraordinary.
+                              </p>
+                              <p style="color: #ffffff;">
+                                 What are you waiting for? Plan with us today and let us turn your vision into reality.
+                              </p>
                            </div>
                         </div>
                      </div>
                   </div>
                </section>
+               
+               <section class="tp-about-3-ptb pt-100 pb-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <h2 class="tp-section-title text-left mb-60 white" style="font-family: 'Marcellus', serif; font-size: 55px; letter-spacing: 1.5px; font-weight: 250;">Testimonials</h2>
+               </div>
+            </div>
+            <div class="row">
+               <!-- Testimonial 1 -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="testimonial-card">
+                     <p>"EWN handled our MCing and Event Moderation so well, such that we had to retain their services for all of our events."</p>
+                     <div class="author">
+                        <img src="assets/img/plp.png" alt="Coffee and Code Team">
+                        <div>
+                           <h4>Coffee and Code Team</h4>
+                           <p>PLP</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Testimonial 2 -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="testimonial-card">
+                     <p>"EWN handled our product launch flawlessly. The event was a huge success, and we couldn’t be happier!"</p>
+                     <div class="author">
+                        <img src="assets/img/testimonials/wayne-egesa.jpg" alt="Wayne Egesa">
+                        <div>
+                           <h4>Wayne Egesa</h4>
+                           <p>Founder, Ishara AI Company</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Testimonial 3 -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="testimonial-card">
+                     <p>"From planning to execution, EWN’s team was outstanding. They understood our vision and brought it to life beautifully."</p>
+                     <div class="author">
+                        <img src="assets/img/ericoooo.jpg" alt="Eric Muray">
+                        <div>
+                           <h4>Eric Muray</h4>
+                           <p>Co-Founder, S.H.I.E.L.D International</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Testimonial 4 -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="testimonial-card">
+                     <p>"EWN’s Spirit Tech program is a game-changer for the youth. My son loved every moment of it!"</p>
+                     <div class="author">
+                        <img src="assets/img/testimonials/parent-royal-school.jpg" alt="Parent from Royal Citizen First Love School">
+                        <div>
+                           <h4>Parent</h4>
+                           <p>Royal Citizen First Love School</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
                <!-- about area end -->
 
                <!-- footer area start -->
@@ -563,7 +768,8 @@
          <li><a href="about-us.html" data-number="02">About Us</a></li>
          <li><a href="service.html" data-number="03">Services</a></li>
          <li><a href="spirit-tech.html" data-number="04">Spirit Tech</a></li>
-         <li><a href="testimonials.html" data-number="05">Testimonials</a></li>
+         <li><a href="portfolio.html" data-number="05">Portfolio</a></li>
+         <!-- <li><a href="testimonials.html" data-number="05">Testimonials</a></li> -->
          <li><a href="blog.html" data-number="06">Blog</a></li>
          <li><a href="contact.html" data-number="07">Contact</a></li>
       </ul>

@@ -306,77 +306,68 @@
 
 
                <!-- contact area start -->
-               <section class="tp-contact-ptb">
-                  <div class="tp-contact-box tp-contact-noice p-relative" data-bg-color="#1E1E1E">
-                     <div class="container-fluid gx-0">
-                        <div class="row gx-0">
-                           <div class="col-xl-6 order-2 order-xl-1">
-                              <div class="tp-contact-thumb">
-                                 <img src="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                              </div>
-                           </div>
-                           <div class="col-xl-6 order-1 order-xl-2">
-                              <div class="tp-contactform-wrap">
-                                 <h4 class="tp-contactform-title">Contact Us</h4>
-                                 <form id="contact-form" action="assets/mail.php" method="post">
-                                    <!-- Name Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Name</label>
-                                       <input name="name" type="text" placeholder="Enter your name" required>
-                                    </div>
-                                    <!-- Email Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Email</label>
-                                       <input name="email" type="email" placeholder="email@example.com" required>
-                                    </div>
-                                    <!-- Subject Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Subject</label>
-                                       <input name="subject" type="text" placeholder="Enter the subject" required>
-                                    </div>
-                                    <!-- Event Type Field (Checkboxes) -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Event Type</label>
-                                       <div class="event-type-checkboxes">
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Corporate Event"> Corporate Event
-                                          </label>
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Wedding"> Wedding
-                                          </label>
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Conference"> Conference
-                                          </label>
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Workshop"> Workshop
-                                          </label>
-                                          <label>
-                                             <input type="checkbox" name="event-type[]" value="Other"> Other
-                                          </label>
-                                       </div>
-                                    </div>
-                                    <!-- Preferred Date Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Preferred Date</label>
-                                       <input name="preferred-date" type="date" required>
-                                    </div>
-                                    <!-- Message Field -->
-                                    <div class="tp-contactform-input mb-35">
-                                       <label>Message</label>
-                                       <textarea name="message" placeholder="Enter your message" required></textarea>
-                                    </div>
-                                    <!-- Submit Button -->
-                                    <div class="tp-contactform-btn">
-                                       <button class="w-100" type="submit">Send Message</button>
-                                       <p class="ajax-response mt-5"></p>
-                                    </div>
-                                 </form>
-                              </div>
-                           </div>
+               <section class="contact-section pt-60 pb-60" style="background-color: #f8f9fa;">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <!-- Contact Form Column -->
+                      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0"> <!-- Adjusted column size -->
+                        <h2 class="text-center mb-40" style="font-size: 2rem; color: #700273;">Contact Us</h2>
+                
+                        <!-- Name and Email Fields -->
+                        <div class="row g-3 mb-4">
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Name*" style="border-radius: 8px; padding: 12px; border: 1px solid #ccc;">
+                          </div>
+                          <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Email Address*" style="border-radius: 8px; padding: 12px; border: 1px solid #ccc;">
+                          </div>
                         </div>
-                     </div>
+                
+                        <!-- Message Field -->
+                        <div class="mb-4">
+                          <textarea class="form-control" placeholder="Message*" rows="5" style="border-radius: 8px; padding: 12px; border: 1px solid #ccc; width: 100%;"></textarea>
+                        </div>
+                
+                        <!-- What are you looking for? Section -->
+                        <div class="mb-4">
+                          <p style="font-size: 1.1rem; color: #333; margin-bottom: 12px;">What are you looking for?*</p>
+                
+                          <!-- Event Type Field -->
+                          <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Event Type*" style="border-radius: 8px; padding: 12px; border: 1px solid #ccc;">
+                          </div>
+                
+                          <!-- Preferred Date Field -->
+                          <div class="mb-3">
+                            <input type="date" class="form-control" placeholder="Preferred Date*" style="border-radius: 8px; padding: 12px; border: 1px solid #ccc;">
+                          </div>
+                        </div>
+                
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary" style="border-radius: 8px; padding: 12px 24px; background-color: #700273; border: none; font-size: 1rem;">
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                
+                      <!-- Map Column -->
+                      <div class="col-lg-6 col-md-12">
+                        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                          <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8440830306054!2d36.804511573111306!3d-1.2661999356006133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173e4f773017%3A0x6ea952c2753d2498!2sRainbow%20Tower!5e0!3m2!1sen!2ske!4v1740097868090!5m2!1sen!2ske"
+                            width="100%"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-               </section>
+                </section>
                <!-- contact area end -->
             </main>
 

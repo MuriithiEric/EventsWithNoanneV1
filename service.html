@@ -21,6 +21,8 @@
       <!-- Add this to your <head> section -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       <style>
          /* Custom Styles for Services Page */
          body {
@@ -213,6 +215,37 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
    }
 }
+
+.event-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(208,210,214,0.2);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.15) !important;
+  border-color: rgba(208,210,214,0.4);
+}
+
+.icon-wrapper i {
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .icon-wrapper i {
+  transform: scale(1.15);
+}
+.service-item {
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.03);
+}
+
+.service-item:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-3px);
+  border-color: rgba(208,210,214,0.5) !important;
+}
+
+
       </style>
    </head>
    <body id="body" class="tp-magic-cursor">
@@ -345,94 +378,252 @@
 
                <!-- services area start -->
                <!-- services area start -->
-<section class="tp-counter-3-ptb"> <!-- Reduced padding-top and padding-bottom -->
-   <div class="tp-services-bg" data-background="assets/img/services/services-bg.jpg"></div>
-   <div class="container container-1720">
-      <div class="row tp-gx-40">
-         <div class="col-lg-12">
-            <div class="tp-services-heading mb-60 text-center"> <!-- Centered the heading -->
-               <h3 class="tp-breadcrumb-title tp-title-anim">Our Event Services</h3>
-               <p class="tp-title-anim">From initial concept to flawless execution, we deliver comprehensive event solutions tailored to your vision.</p>
-            </div>
-         </div>
-      </div>
-      <div class="row justify-content-center"> <!-- Centered the service items -->
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>End-to-End Event Management</h4>
-               <p>Full-service planning including concept development, logistics coordination, and post-event reporting.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>Hybrid & Virtual Production</h4>
-               <p>Streaming solutions, virtual platforms, and hybrid event integration for global audiences.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>Event Technology Solutions</h4>
-               <p>Interactive apps, live polling, registration systems, and real-time analytics integration.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>Creative Concept Design</h4>
-               <p>Themed environments, stage design, and brand-aligned experiential activations.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>Vendor Management</h4>
-               <p>Coordination of catering, AV production, venues, and staffing through vetted partnerships.</p>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6">
-            <div class="tp-services-item">
-               <h4>On-Site Execution</h4>
-               <p>Full technical production, guest management, and real-time troubleshooting during events.</p>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
+               <section class="tp-hero-3-ptb fix pb-160 p-relative">
+                  <div class="tp-hero-3-bg tp_fade_bottom">
+                     <img src="assets/img/hero/home-3/hero-3-bg.png" alt="">
+                  </div>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <!-- Move "Events with Noanne" up to the navbar level -->
+                           
+                           <div class="tp-hero-3-conetnt text-center">
+                              <div class="tp-hero-3-heading tp_fade_anim" data-delay="0.5">
+                                 <h3 class="tp-hero-3-title">
+                                    Our Event Services
+                                 </h3>
+                              </div>
+                            
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+
 <!-- services area end -->
 
 <!-- event types area start -->
-<section class="tp-event-types-ptb pt-100 pb-80" data-bg-color="#700273"> <!-- Reduced padding-top and padding-bottom -->
-   <div class="container container-1610">
-      <div class="row">
-         <div class="col-lg-12">
-            <div class="tp-event-types-heading mb-60 text-center"> <!-- Centered the heading -->
-               <h3 class="tp-section-title tp-char-animation">Event Types We Specialize In</h3>
-            </div>
+<section class="tp-event-specialties pt-80 pb-60" style="background-color: #700273;">
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-lg-10 text-center mb-50">
+         <h2 class="section-title mb-4" style="font-size: 2.5rem; color: #ffffff;">
+           Our Event Expertise
+         </h2>
+         <p class="text-light mb-0" style="opacity: 0.9; font-size: 1.1rem; color: #D0D2D6;">
+           Comprehensive solutions for technical gatherings and innovation events
+         </p>
+       </div>
+     </div>
+ 
+     <div class="row g-4 justify-content-center">
+       <!-- Product Launches -->
+       <div class="col-lg-4 col-md-6">
+         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+             <i class="fas fa-rocket"></i>
+           </div>
+           <h5 class="text-white mb-2">Product Launches</h5>
+           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+             Strategic unveiling of new tech products and innovations
+           </p>
          </div>
-      </div>
-      <div class="row justify-content-center"> <!-- Centered the event types list -->
-         <div class="col-lg-6">
-            <div class="tp-event-types-list">
-               <ul>
-                  <li>Product Launches</li>
-                  <li>Exhibitions and Expos</li>
-                  <li>Corporate Meetings and Celebrations</li>
-                  <li>Conferences and Seminars</li>
-                  <li>Hackathons and Coding Competitions</li>
-               </ul>
-            </div>
+       </div>
+ 
+       <!-- Exhibitions and Expos -->
+       <div class="col-lg-4 col-md-6">
+         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+             <i class="fas fa-chess-board"></i>
+           </div>
+           <h5 class="text-white mb-2">Exhibitions & Expos</h5>
+           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+             Technology showcase platforms for industry leaders
+           </p>
          </div>
-         <div class="col-lg-6">
-            <div class="tp-event-types-list">
-               <ul>
-                  <li>Developer Summits</li>
-                  <li>Networking Mixers</li>
-                  <li>Training Workshops and Certification Programs</li>
-                  <li>Startup Showcases and Demo Days</li>
-               </ul>
-            </div>
+       </div>
+ 
+       <!-- Corporate Meetings -->
+       <div class="col-lg-4 col-md-6">
+         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+             <i class="fas fa-handshake"></i>
+           </div>
+           <h5 class="text-white mb-2">Corporate Meetings</h5>
+           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+             Executive gatherings and milestone celebrations
+           </p>
          </div>
-      </div>
+       </div>
+ 
+       <!-- Conferences -->
+       <div class="col-lg-4 col-md-6">
+         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+             <i class="fas fa-comments"></i>
+           </div>
+           <h5 class="text-white mb-2">Conferences</h5>
+           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+             Industry-leading knowledge exchange forums
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Hackathons -->
+       <div class="col-lg-4 col-md-6">
+         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+             <i class="fas fa-laptop-code"></i>
+           </div>
+           <h5 class="text-white mb-2">Hackathons</h5>
+           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+             Intensive coding challenges and tech innovation sprints
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Developer Summits -->
+       <div class="col-lg-4 col-md-6">
+         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+             <i class="fas fa-users-gear"></i>
+           </div>
+           <h5 class="text-white mb-2">Developer Summits</h5>
+           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+             Community-driven technical collaboration events
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Networking Mixers -->
+       <div class="col-lg-4 col-md-6">
+         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+             <i class="fas fa-user-friends"></i>
+           </div>
+           <h5 class="text-white mb-2">Networking Mixers</h5>
+           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+             Professional connection-building events
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Training Workshops -->
+       <div class="col-lg-4 col-md-6">
+         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+             <i class="fas fa-chalkboard-teacher"></i>
+           </div>
+           <h5 class="text-white mb-2">Training Workshops</h5>
+           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+             Skill development and certification programs
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Startup Showcases -->
+       <div class="col-lg-4 col-md-6">
+         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+             <i class="fas fa-lightbulb"></i>
+           </div>
+           <h5 class="text-white mb-2">Startup Showcases</h5>
+           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+             Emerging tech innovation demonstrations
+           </p>
+         </div>
+       </div>
+     </div>
    </div>
-</section>
+ </section>
+
+ <section class="tp-support-services pt-60 pb-40" style="background-color: #700273;">
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-lg-10 text-center mb-40">
+         <h3 class="text-white mb-3" style="font-size: 1.8rem; letter-spacing: 0.5px;">
+           Comprehensive Support Services
+         </h3>
+         <p class="text-light" style="opacity: 0.9; color: #D0D2D6; font-size: 1rem;">
+           Behind-the-scenes expertise for flawless execution
+         </p>
+       </div>
+     </div>
+ 
+     <div class="row g-4 justify-content-center">
+       <!-- Service Item 1 -->
+       <div class="col-lg-4 col-md-6 d-flex">
+         <div class="service-item w-100" style="border: 1px solid rgba(208,210,214,0.3); border-radius: 8px; padding: 25px;">
+           <h5 class="text-white mb-2" style="font-size: 1.1rem;">Event Concept & Design</h5>
+           <p class="mb-0" style="color: #D0D2D6; font-size: 0.95rem; opacity: 0.9;">
+             Creative direction and thematic development for memorable experiences
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Service Item 2 -->
+       <div class="col-lg-4 col-md-6 d-flex">
+         <div class="service-item w-100" style="border: 1px solid rgba(208,210,214,0.3); border-radius: 8px; padding: 25px;">
+           <h5 class="text-white mb-2" style="font-size: 1.1rem;">Full Planning & Production</h5>
+           <p class="mb-0" style="color: #D0D2D6; font-size: 0.95rem; opacity: 0.9;">
+             End-to-end management from initial strategy to final execution
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Service Item 3 -->
+       <div class="col-lg-4 col-md-6 d-flex">
+         <div class="service-item w-100" style="border: 1px solid rgba(208,210,214,0.3); border-radius: 8px; padding: 25px;">
+           <h5 class="text-white mb-2" style="font-size: 1.1rem;">Vendor Management</h5>
+           <p class="mb-0" style="color: #D0D2D6; font-size: 0.95rem; opacity: 0.9;">
+             Strategic partnerships and contract optimization
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Service Item 4 -->
+       <div class="col-lg-4 col-md-6 d-flex">
+         <div class="service-item w-100" style="border: 1px solid rgba(208,210,214,0.3); border-radius: 8px; padding: 25px;">
+           <h5 class="text-white mb-2" style="font-size: 1.1rem;">Talent Solutions</h5>
+           <p class="mb-0" style="color: #D0D2D6; font-size: 0.95rem; opacity: 0.9;">
+             Specialized staffing and crew management
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Service Item 5 -->
+       <div class="col-lg-4 col-md-6 d-flex">
+         <div class="service-item w-100" style="border: 1px solid rgba(208,210,214,0.3); border-radius: 8px; padding: 25px;">
+           <h5 class="text-white mb-2" style="font-size: 1.1rem;">Sponsor Relations</h5>
+           <p class="mb-0" style="color: #D0D2D6; font-size: 0.95rem; opacity: 0.9;">
+             Partnership development and media coordination
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Service Item 6 -->
+       <div class="col-lg-4 col-md-6 d-flex">
+         <div class="service-item w-100" style="border: 1px solid rgba(208,210,214,0.3); border-radius: 8px; padding: 25px;">
+           <h5 class="text-white mb-2" style="font-size: 1.1rem;">Video Production</h5>
+           <p class="mb-0" style="color: #D0D2D6; font-size: 0.95rem; opacity: 0.9;">
+             Event documentation and post-production content creation
+           </p>
+         </div>
+       </div>
+ 
+       <!-- Service Item 7 -->
+       <div class="col-lg-4 col-md-6 d-flex">
+         <div class="service-item w-100" style="border: 1px solid rgba(208,210,214,0.3); border-radius: 8px; padding: 25px;">
+           <h5 class="text-white mb-2" style="font-size: 1.1rem;">Event Hosting</h5>
+           <p class="mb-0" style="color: #D0D2D6; font-size: 0.95rem; opacity: 0.9;">
+             Professional moderation and master of ceremonies services
+           </p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ 
 <!-- event types area end -->
                <!-- event types area end -->
 

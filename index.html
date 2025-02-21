@@ -313,6 +313,18 @@
             color: #666;
             margin: 0;
          }
+
+          /* Style for input placeholders */
+  .form-control::placeholder {
+    color: #fff !important; /* White placeholder text */
+    opacity: 0.8; /* Slightly transparent for better readability */
+  }
+
+  /* Style for textarea placeholders */
+  textarea.form-control::placeholder {
+    color: #fff !important; /* White placeholder text */
+    opacity: 0.8; /* Slightly transparent for better readability */
+  }
       
 
       </style>
@@ -704,6 +716,57 @@
             </div>
          </div>
       </section>
+      <section class="contact-section pt-60 pb-60" style="background-color: #700273;">
+         <div class="container-fluid">
+           <div class="row justify-content-center">
+             <div class="col-lg-10 col-12">
+               <!-- Contact Us Heading -->
+               <h2 class="mb-40" style="font-size: 2.5rem; color: #fff; font-family: 'Marcellus', serif; font-weight: 200; letter-spacing: 1px;">
+                 Contact Us
+               </h2>
+       
+               <!-- Name and Email Fields -->
+               <div class="row g-4 mb-4">
+                 <div class="col-md-6">
+                   <input type="text" class="form-control" placeholder="Name*" style="border-radius: 8px; padding: 14px; border: 1px solid rgba(208, 210, 214, 0.3); background-color: rgba(255, 255, 255, 0.1); color: #fff; font-size: 1rem;">
+                 </div>
+                 <div class="col-md-6">
+                   <input type="email" class="form-control" placeholder="Email Address*" style="border-radius: 8px; padding: 14px; border: 1px solid rgba(208, 210, 214, 0.3); background-color: rgba(255, 255, 255, 0.1); color: #fff; font-size: 1rem;">
+                 </div>
+               </div>
+       
+               <!-- Message Field -->
+               <div class="mb-4">
+                 <textarea class="form-control" placeholder="Message*" rows="6" style="border-radius: 8px; padding: 14px; border: 1px solid rgba(208, 210, 214, 0.3); background-color: rgba(255, 255, 255, 0.1); color: #fff; font-size: 1rem; width: 100%;"></textarea>
+               </div>
+       
+               <!-- What are you looking for? Section -->
+               <div class="mb-4">
+                 <p style="font-size: 1.2rem; color: #fff; font-family: 'Marcellus', serif; font-weight: 400; letter-spacing: 1px; opacity: 0.9; margin-bottom: 20px;">
+                   What are you looking for?*
+                 </p>
+       
+                 <!-- Event Type Field -->
+                 <div class="mb-4">
+                   <input type="text" class="form-control" placeholder="Event Type*" style="border-radius: 8px; padding: 14px; border: 1px solid rgba(208, 210, 214, 0.3); background-color: rgba(255, 255, 255, 0.1); color: #fff; font-size: 1rem;">
+                 </div>
+       
+                 <!-- Preferred Date Field -->
+                 <div class="mb-4">
+                   <input type="date" class="form-control" placeholder="Preferred Date*" style="border-radius: 8px; padding: 14px; border: 1px solid rgba(208, 210, 214, 0.3); background-color: rgba(255, 255, 255, 0.1); color: #fff; font-size: 1rem;">
+                 </div>
+               </div>
+       
+               <!-- Submit Button -->
+               <div class="text-left">
+                 <button type="submit" class="btn btn-primary" style="border-radius: 8px; padding: 14px 30px; background-color: #fff; border: none; color: #700273; font-size: 1.1rem; font-family: 'Marcellus', serif; font-weight: 400; letter-spacing: 1px; transition: all 0.3s ease;">
+                   Submit
+                 </button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
                <!-- about area end -->
 
                <!-- footer area start -->
@@ -729,10 +792,10 @@
                                     <span>Email Address</span>
                                     <a href="mailto:hello@eventswithnoanne.com">info@eventswithnoanne.com</a>
                                  </div>
-                                 <div class="tp-footer-info-item">
+                                 <!-- <div class="tp-footer-info-item">
                                     <span>Contact</span>
                                     <a href="tel:01234567">0707843200</a>
-                                 </div>
+                                 </div> -->
                               </div>
                            </div>
                         </div>

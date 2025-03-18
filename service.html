@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Place favicon.ico in the root directory -->
-      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+      <link rel="shortcut icon" type="image/x-icon" href="./assets/img/ewn-logo.jpeg">
 
       <!-- CSS here -->
       <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -21,6 +21,7 @@
       <!-- Add this to your <head> section -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       <style>
@@ -245,7 +246,42 @@
   border-color: rgba(208,210,214,0.5) !important;
 }
 
+.event-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
 
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(112, 2, 115, 0.1);
+  border-color: rgba(112, 2, 115, 0.3) !important;
+}
+
+.event-card:hover .icon-wrapper i {
+  color: #9D4EFF !important;
+  transform: scale(1.1);
+}
+
+.icon-wrapper i {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    margin-bottom: 20px;
+  }
+}
+
+h1, h2, h3, .hero-title {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* Body font - Clean and modern */
+body, p, button {
+  font-family: 'Poppins', sans-serif;
+}
       </style>
    </head>
    <body id="body" class="tp-magic-cursor">
@@ -291,13 +327,13 @@
                         <a href="https://www.instagram.com/eventswithnoanne" target="_blank" class="social-icon">
                            <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/eventswithnoanne" target="_blank" class="social-icon">
+                        <a href="https://www.facebook.com/EWNKenya/ " target="_blank" class="social-icon">
                            <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://www.twitter.com/eventswithnoanne" target="_blank" class="social-icon">
                            <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.linkedin.com/eventswithnoanne" target="_blank" class="social-icon">
+                        <a href="https://www.linkedin.com/company/events-with-noanne/posts/?feedView=all" target="_blank" class="social-icon">
                            <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://www.tiktok.com/@eventswithnoanne" target="_blank" class="social-icon">
@@ -403,132 +439,134 @@
 <!-- services area end -->
 
 <!-- event types area start -->
-<section class="tp-event-specialties pt-80 pb-60" style="background-color: #700273;">
+<section class="tp-event-specialties pt-80 pb-60" style="background-color: #f8f9fa;">
    <div class="container">
      <div class="row justify-content-center">
        <div class="col-lg-10 text-center mb-50">
-         <h2 class="section-title mb-4" style="font-size: 2.5rem; color: #ffffff;">
+         <h2 class="section-title mb-4" style="font-size: 2.5rem; color: #2d033b;">
            Our Event Expertise
          </h2>
-         <p class="text-light mb-0" style="opacity: 0.9; font-size: 1.1rem; color: #D0D2D6;">
+         <p class="mb-0" style="opacity: 0.9; font-size: 1.1rem; color: #700273;">
            Comprehensive solutions for technical gatherings and innovation events
          </p>
        </div>
      </div>
- 
+
      <div class="row g-4 justify-content-center">
        <!-- Product Launches -->
-       <div class="col-lg-4 col-md-6">
-         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
-           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
-             <i class="fas fa-rocket"></i>
-           </div>
-           <h5 class="text-white mb-2">Product Launches</h5>
-           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
-             Strategic unveiling of new tech products and innovations
-           </p>
+       <div class="row g-4 justify-content-center">
+         <!-- Event MCing Services -->
+         <div class="col-lg-4 col-md-6">
+             <div class="event-card" style="background: #ffffff; border-radius: 15px; padding: 25px; height: 100%; border: 1px solid rgba(112, 2, 115, 0.1);">
+                 <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #700273;">
+                     <i class="fas fa-microphone-alt"></i>
+                 </div>
+                 <h5 class="mb-2" style="color: #2d033b;">Event MCing Services</h5>
+                 <p style="opacity: 0.85; font-size: 0.95rem; color: #4a4a4a;">
+                     Professional hosting and stage management for seamless event flow
+                 </p>
+             </div>
          </div>
-       </div>
- 
-       <!-- Exhibitions and Expos -->
-       <div class="col-lg-4 col-md-6">
-         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
-           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
-             <i class="fas fa-chess-board"></i>
-           </div>
-           <h5 class="text-white mb-2">Exhibitions & Expos</h5>
-           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
-             Technology showcase platforms for industry leaders
-           </p>
+     
+         <!-- Product Launches -->
+         <div class="col-lg-4 col-md-6">
+             <div class="event-card" style="background: #ffffff; border-radius: 15px; padding: 25px; height: 100%; border: 1px solid rgba(112, 2, 115, 0.1);">
+                 <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #700273;">
+                     <i class="fas fa-rocket"></i>
+                 </div>
+                 <h5 class="mb-2" style="color: #2d033b;">Product Launches</h5>
+                 <p style="opacity: 0.85; font-size: 0.95rem; color: #4a4a4a;">
+                     Strategic unveiling of new tech products and innovations
+                 </p>
+             </div>
          </div>
-       </div>
- 
+
        <!-- Corporate Meetings -->
        <div class="col-lg-4 col-md-6">
-         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
-           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+         <div class="event-card" style="background: #ffffff; border-radius: 15px; padding: 25px; height: 100%; border: 1px solid rgba(112, 2, 115, 0.1);">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #700273;">
              <i class="fas fa-handshake"></i>
            </div>
-           <h5 class="text-white mb-2">Corporate Meetings</h5>
-           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+           <h5 class="mb-2" style="color: #2d033b;">Corporate Meetings</h5>
+           <p style="opacity: 0.85; font-size: 0.95rem; color: #4a4a4a;">
              Executive gatherings and milestone celebrations
            </p>
          </div>
        </div>
- 
+
        <!-- Conferences -->
        <div class="col-lg-4 col-md-6">
-         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
-           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+         <div class="event-card" style="background: #ffffff; border-radius: 15px; padding: 25px; height: 100%; border: 1px solid rgba(112, 2, 115, 0.1);">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #700273;">
              <i class="fas fa-comments"></i>
            </div>
-           <h5 class="text-white mb-2">Conferences</h5>
-           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+           <h5 class="mb-2" style="color: #2d033b;">Conferences</h5>
+           <p style="opacity: 0.85; font-size: 0.95rem; color: #4a4a4a;">
              Industry-leading knowledge exchange forums
            </p>
          </div>
        </div>
- 
+
        <!-- Hackathons -->
        <div class="col-lg-4 col-md-6">
-         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
-           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+         <div class="event-card" style="background: #ffffff; border-radius: 15px; padding: 25px; height: 100%; border: 1px solid rgba(112, 2, 115, 0.1);">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #700273;">
              <i class="fas fa-laptop-code"></i>
            </div>
-           <h5 class="text-white mb-2">Hackathons</h5>
-           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+           <h5 class="mb-2" style="color: #2d033b;">Hackathons</h5>
+           <p style="opacity: 0.85; font-size: 0.95rem; color: #4a4a4a;">
              Intensive coding challenges and tech innovation sprints
            </p>
          </div>
        </div>
- 
+
        <!-- Developer Summits -->
        <div class="col-lg-4 col-md-6">
-         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
-           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+         <div class="event-card" style="background: #ffffff; border-radius: 15px; padding: 25px; height: 100%; border: 1px solid rgba(112, 2, 115, 0.1);">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #700273;">
              <i class="fas fa-users-gear"></i>
            </div>
-           <h5 class="text-white mb-2">Developer Summits</h5>
-           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+           <h5 class="mb-2" style="color: #2d033b;">Developer Summits</h5>
+           <p style="opacity: 0.85; font-size: 0.95rem; color: #4a4a4a;">
              Community-driven technical collaboration events
            </p>
          </div>
        </div>
- 
+
        <!-- Networking Mixers -->
        <div class="col-lg-4 col-md-6">
-         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
-           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+         <div class="event-card" style="background: #ffffff; border-radius: 15px; padding: 25px; height: 100%; border: 1px solid rgba(112, 2, 115, 0.1);">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #700273;">
              <i class="fas fa-user-friends"></i>
            </div>
-           <h5 class="text-white mb-2">Networking Mixers</h5>
-           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+           <h5 class="mb-2" style="color: #2d033b;">Networking Mixers</h5>
+           <p style="opacity: 0.85; font-size: 0.95rem; color: #4a4a4a;">
              Professional connection-building events
            </p>
          </div>
        </div>
- 
+
        <!-- Training Workshops -->
        <div class="col-lg-4 col-md-6">
-         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
-           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+         <div class="event-card" style="background: #ffffff; border-radius: 15px; padding: 25px; height: 100%; border: 1px solid rgba(112, 2, 115, 0.1);">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #700273;">
              <i class="fas fa-chalkboard-teacher"></i>
            </div>
-           <h5 class="text-white mb-2">Training Workshops</h5>
-           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+           <h5 class="mb-2" style="color: #2d033b;">Training Workshops</h5>
+           <p style="opacity: 0.85; font-size: 0.95rem; color: #4a4a4a;">
              Skill development and certification programs
            </p>
          </div>
        </div>
- 
+
        <!-- Startup Showcases -->
        <div class="col-lg-4 col-md-6">
-         <div class="event-card" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; height: 100%;">
-           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #D0D2D6;">
+         <div class="event-card" style="background: #ffffff; border-radius: 15px; padding: 25px; height: 100%; border: 1px solid rgba(112, 2, 115, 0.1);">
+           <div class="icon-wrapper mb-3" style="font-size: 2rem; color: #700273;">
              <i class="fas fa-lightbulb"></i>
            </div>
-           <h5 class="text-white mb-2">Startup Showcases</h5>
-           <p class="text-light" style="opacity: 0.85; font-size: 0.95rem; color: #D0D2D6;">
+           <h5 class="mb-2" style="color: #2d033b;">Startup Showcases</h5>
+           <p style="opacity: 0.85; font-size: 0.95rem; color: #4a4a4a;">
              Emerging tech innovation demonstrations
            </p>
          </div>
@@ -662,7 +700,9 @@
                                  <div class="tp-footer-2-widget-content">
                                     <div class="tp-footer-2-widget-content-contact">
                                        <a href="mailto:info@eventswithnoanne.com">info@eventswithnoanne.com</a>
-                                       <a href="tel:0707843200">0707843200</a>
+                                       <a href="tel:
+">
+</a>
                                     </div>
                                  </div>
                               </div>

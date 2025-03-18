@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Place favicon.ico in the root directory -->
-      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+      <link rel="shortcut icon" type="image/x-icon" href="./assets/img/ewn-logo.jpeg">
 
       <!-- CSS here -->
       <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -140,7 +140,7 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
    }
 }
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap');
 .tp-postbox-details-text {
     color: #ffffff; /* Bright white text */
     font-size: 16px;
@@ -155,6 +155,44 @@
 
 .tp-blog-item-content.white-style {
     color: #ffffff !important; /* Ensures bright white text */
+}
+.next-article-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background-color: #700273;
+    color: #fff !important;
+    border-radius: 8px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+}
+
+.next-article-btn:hover {
+    background-color: #500154;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(112, 2, 115, 0.25);
+}
+
+.next-article-btn svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.next-article-btn:hover svg {
+    transform: translateX(3px);
+}
+
+@media (max-width: 767px) {
+    .next-article-btn {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
 }
 
       </style>
@@ -206,13 +244,13 @@
                         <a href="https://www.instagram.com/eventswithnoanne" target="_blank" class="social-icon">
                            <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/eventswithnoanne" target="_blank" class="social-icon">
+                        <a href="https://www.facebook.com/EWNKenya/ " target="_blank" class="social-icon">
                            <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://www.twitter.com/eventswithnoanne" target="_blank" class="social-icon">
                            <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.linkedin.com/eventswithnoanne" target="_blank" class="social-icon">
+                        <a href="https://www.linkedin.com/company/events-with-noanne/posts/?feedView=all" target="_blank" class="social-icon">
                            <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://www.tiktok.com/@eventswithnoanne" target="_blank" class="social-icon">
@@ -337,6 +375,20 @@
    
                            </div>
                         </div>
+
+                        <div class="tp-postbox-navigation mt-60">
+                           <a href="why-tech-events-need-creative-storytelling.html" 
+                              class="next-article-btn"
+                              aria-label="Next Article: Why Tech Events Need Creative Storytelling">
+                               <span>Next Article</span>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm3.71 10.71l-4 4a1 1 0 0 1-1.41-1.41L12.59 12 9.3 8.71a1 1 0 1 1 1.41-1.41l4 4a1 1 0 0 1 0 1.41z"/>
+                               </svg>
+                           </a>
+                       </div>
+
+                        
+                        
                         <div class="col-xxl-4 col-xl-4 col-lg-4">
                            <div class="sidebar__wrapper sidebar-white-style">
                               
@@ -363,6 +415,7 @@
                            </div>
                         </div>
                      </div>
+                     
                   </div>
                </section>  
                <!-- postbox area end -->
@@ -404,7 +457,9 @@
                               <div class="tp-footer-2-widget-content">
                                  <div class="tp-footer-2-widget-content-contact">
                                     <a href="mailto:info@eventswithnoanne.com">info@eventswithnoanne.com</a>
-                                    <a href="tel:0707843200">0707843200</a>
+                                    <a href="tel:
+">
+</a>
                                  </div>
                               </div>
                            </div>
